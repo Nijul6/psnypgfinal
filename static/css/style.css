@@ -309,7 +309,7 @@ body{
 }
 .header .logo {
 	float: left;
-	margin-top: 18px;
+	margin-top: 10px;
 }
 .header .navbar {
 	background: none;
@@ -402,7 +402,7 @@ body{
 .header .single-widget .logo{
 	margin:0;
 	padding:0;
-	margin-top: 7px;
+	margin-top: 4px;
 }
 .header .single-widget i {
 	position: absolute;
