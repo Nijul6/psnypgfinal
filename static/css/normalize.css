@@ -190,9 +190,9 @@ a,button,input{
 	font-weight:400;
 }
 img,a,input,h1, h2, h3, h4, h5, h6{
-	-webkit-transition:all 0.4s ease;
-	-moz-transition:all 0.4s ease;
-	transition:all 0.4s ease;
+	-webkit-transition:all 0.1s ease;
+	-moz-transition:all 0.1s ease;
+	transition:all 0.1s ease;
 }
 dfn, cite, em, i {
 	font-style: italic;
