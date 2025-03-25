@@ -1,7 +1,11 @@
+
 from django.urls import path
 from . import views
+from .views import HomeView
 
 urlpatterns = [
-    path('', views.index, name='index'),  # Make root URL go to index
+    #path('', views.index, name='index'),  # Make root URL go to index
     # other URL patterns...
+    path('', HomeView.as_view(), name="home"),
+    path('home/', HomeView.as_view(), name='home'),
 ]
