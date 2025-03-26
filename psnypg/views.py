@@ -32,5 +32,11 @@ def whoWeAre (request):
 def whatWeDo (request):
     return render (request, 'psnypg/what_we_do.html')
 
+def WhyPsn (request):
+    return render (request, 'psnypg/why_psn.html')
+
+def OurImpact (request):
+    return render (request, 'psnypg/our_impact.html')
+
 def Contact_Us (request):
     return render (request, 'psnypg/contact.html')

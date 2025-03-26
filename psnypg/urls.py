@@ -10,5 +10,7 @@ urlpatterns = [
     path('home/', HomeView.as_view(), name='home'),
     path('whoweare/', views.whoWeAre, name='whoweare'),
     path('whatwedo/', views.whatWeDo, name='whatwedo'),
+    path('whypsn/', views.WhyPsn, name='whypsn'),
+    path('ourimpact/', views.OurImpact, name='ourimpact'),
     path('contact_us/', views.Contact_Us, name='contact_us'),
 ]
