@@ -16,6 +16,7 @@
 		
 		<!-- Favicon -->
         <link rel="icon" href="{% static 'img/favicon.png' %}">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 		
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
@@ -95,11 +96,11 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="{% url 'home' %}">Home <i class="icofont-rounded-down"></i></a></li>
+											<li class="active"><a href="{% url 'home' %}">Home</a></li>
                                             <li><a href="#">About Us <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
 													<li><a href="{% url 'whoweare' %}">Who We Are</a></li>
-													<li><a href="blog-single.html">What We Do</a></li>
+													<li><a href="{% url 'whatwedo'%}">What We Do</a></li>
                                                     <li><a href="blog-single.html">Why PSN-YPG Matters</a></li>
 												</ul>
 											</li>
@@ -125,7 +126,7 @@
 							</div>
 							<div class="col-lg-2 col-10">
 								<div class="get-quote">
-									<a href="appointment.html" class="btn">Book Appointment</a>
+									<a href="appointment.html" class="btn">Get Involved</a>
 								</div>
 							</div>
 						</div>
@@ -266,6 +267,11 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
 <!-- Bootstrap JS -->
+<!-- Popper.js (required for Bootstrap's JavaScript) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <script src="{% static 'js/bootstrap.min.js'%}"></script>
 <!-- Main JS -->
 <script src="{% static 'js/main.js' %}"></script>

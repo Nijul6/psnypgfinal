@@ -9,5 +9,6 @@ urlpatterns = [
     path('', HomeView.as_view(), name="home"),
     path('home/', HomeView.as_view(), name='home'),
     path('whoweare/', views.whoWeAre, name='whoweare'),
+    path('whatwedo/', views.whatWeDo, name='whatwedo'),
     path('contact_us/', views.Contact_Us, name='contact_us'),
 ]

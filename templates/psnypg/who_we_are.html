@@ -3,18 +3,20 @@
 {% load static %}
 {% block content%}
 
-<section class="section db p120">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <br><br>
-                <div class="tagline-message page-title text-center">
-                    <h1 style="color: #fff; font-family: sans-serif, font-size: 50px;">Who We Are</h1>
-                </div>
-            </div><!-- end col -->
-        </div><!-- end row -->
-    </div><!-- end container -->
-</section><!-- end section -->
+
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>Who We Are</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
 
 
 
@@ -76,57 +78,82 @@
 		<!--/ End Why choose -->
 
 
-		<!-- Start Feautes -->
-		<section class="Feautes section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h3 style="color: #98681e;font-family: sans-serif;">We Are Always Ready to Help You & Your Family</h3>
-							<img src="{% static 'img/section-img.png'%}" alt="#">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features">
-							<div class="signle-icon">
-								<i class="icofont icofont-ambulance-cross"></i>
-							</div>
-							<h3>Emergency Help</h3>
-							<p>At Psn-ypg, we are here to support you during medical emergencies. 
-								While we are not an emergency medical facility, we can assist with</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features">
-							<div class="signle-icon">
-								<i class="icofont icofont-medical-sign-alt"></i>
-							</div>
-							<h3>Enriched Pharmecy</h3>
-							<p>At Psn-ypg, we go beyond prescriptions—offering personalized care, 
-								expert advice, and essential health services to enrich your well-being.</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features last">
-							<div class="signle-icon">
-								<i class="icofont icofont-stethoscope"></i>
-							</div>
-							<h3>Medical Treatment</h3>
-							<p>At Psn-ypg, we offer expert advice, personalized medication management, and 
-								support to help you achieve better health.</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-				</div>
-			</div>
-		</section>
+
+
+		<!-- Tab Section -->
+<div class="shadow p-5 mb-5 bg-body rounded">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="shop-extra">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="font-family: Georgia;">OUR VISION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="menu2-tab" data-toggle="tab" href="#menu2" role="tab" aria-controls="menu2" aria-selected="false" style="font-family: Georgia;">OUR MISSION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="menu3-tab" data-toggle="tab" href="#menu3" role="tab" aria-controls="menu3" aria-selected="false" style="font-family: Georgia;">OUR APPROACH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="menu4-tab" data-toggle="tab" href="#menu4" role="tab" aria-controls="menu4" aria-selected="false" style="font-family: Georgia;">OUR PROMISE</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 style="color: #98681e; font-family: Georgia;">Vision</h3>
+                        <p>To be a leading integrated construction, real estate, and facility management company 
+                            in Nigeria, delivering innovative, sustainable, and high-quality solutions 
+                            that enhance the built environment and quality of life. To emerge as the leading construction and real estate service provider in Africa 
+                            and globally, accomplished through the delivery of internationally acclaimed structures.</p>
+                    </div>
+                    <div class="tab-pane fade" id="menu2" role="tabpanel" aria-labelledby="menu2-tab">
+                        <h3 style="color: #98681e; font-family: Georgia;">Mission</h3>
+                        <p>To provide exceptional services, exceeding client expectations, 
+                            while fostering a culture of safety, integrity, and community engagement. 
+                            To revolutionize the Nigerian real estate landscape by delivering unparalleled quality through cutting-edge 
+                            innovation, superior quality, and unwavering commitment to sustainability.</p>
+                    </div>
+                    <div class="tab-pane fade" id="menu3" role="tabpanel" aria-labelledby="menu3-tab">
+                        <h3 style="color: #98681e; font-family: Georgia;">Approach</h3>
+                        <p>At Deus Magnus, we address complex challenges facing high-net-worth property developers, 
+                            investors, and owners. Our innovative approach significantly reduces risks, delays, and 
+                            premature deterioration by focusing on five key areas:</p>
+                        <div class="row">
+                            <div class="col-lg-8 col-md-6 col-sm-4 col-xs-12 first">
+                                <ul class="check">
+                                    <li>Integrated Solutions Model</li>
+                                    <li>Lifecycle Cost Optimization</li>
+                                    <li>Technology Integration</li>
+                                    <li>Sustainability Focus</li>
+                                    <li>Quality Assurance and Project Management</li>
+                                </ul><!-- end check -->
+                            </div><!-- end col-lg-4 -->    
+                        </div><!-- end row -->
+                    </div>
+                    <div class="tab-pane fade" id="menu4" role="tabpanel" aria-labelledby="menu4-tab">
+                        <h3 style="color: #98681e; font-family: Georgia;">Promise</h3>
+                        <div class="row">
+                            <div class="col-lg-8 col-md-6 col-sm-4 col-xs-12 first">
+                                <ul class="check">
+                                    <li>Service Par Excellence</li>
+                                    <li>Quality Assurance Measures</li>
+                                    <li>Customer Satisfaction Guarantee</li>
+                                </ul><!-- end check -->
+                            </div><!-- end col-lg-4 -->   
+                        </div><!-- end row -->
+                    </div>
+                </div>
+            </div><!-- end shop-extra -->
+        </div><!-- end col -->
+    </div><!-- end row -->
+
+    <div class="btn-wrapper">
+        <a href="javascript:history.back();" class="btn btn-primary" style="border-radius: 10px; font-family: Georgia;"> Back </a>
+    </div>
+</div><!-- end shadow p-5 -->
+		
 		<!--/ End Feautes -->
 
 {% endblock %}
