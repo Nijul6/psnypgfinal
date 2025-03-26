@@ -299,7 +299,7 @@
 							{% for post in object_list %}
 							<div class="single-pf">
 								<img src="{{ post.excos_img.url }}" style="height: 300px;border-radius:10px;" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="{% url 'excos_user'%}" class="btn">View Details</a>
 							</div>
 							{% endfor %}
 						</div>
