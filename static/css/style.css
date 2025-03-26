@@ -2069,13 +2069,15 @@ body{
 }
 .blog .single-news .news-content {
 	text-align: left;
-	background: #fff;
+	background: #005200;
 	z-index: 99;
 	position: relative;
 	padding: 30px;
 	left: 0;
 	z-index: 0;
 }
+
+
 .blog .single-news .news-content:before{
 	position:absolute;
 	content:"";
