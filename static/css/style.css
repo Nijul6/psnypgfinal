@@ -1733,7 +1733,7 @@ body{
     background-image: url('img/client-bg.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 0;
+    padding: 70px 5;
     position: relative;
     background-color:#F6F7FB /* Fallback color */
 }
@@ -1762,8 +1762,8 @@ body{
 }
 
 .clients .single-clients {
-    width: 120px; /* Box width */
-    height: 100px; /* Box height */
+    width: 350px; /* Box width */
+    height: 200px; /* Box height */
     overflow: hidden; /* Hides any overflow of the image */
     margin-bottom: 20px;
     display: flex;
