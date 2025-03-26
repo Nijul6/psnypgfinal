@@ -1,7 +1,7 @@
 from django.contrib import admin
 # Register your models here.
 from . import models
-from .models import ExcosPicturePost,MainHeaderPicturePost,LogoPicturePost
+from .models import ExcosPicturePost,MainHeaderPicturePost,LogoPicturePost,ExcosUser
 
 #The main header picture post model admin
 class MainHeaderPicturePostModelAdmin (admin.ModelAdmin):
@@ -18,3 +18,10 @@ admin.site.register(ExcosPicturePost, ExcosPicturePostModelAdmin)
 class LogoPicturePostModelAdmin (admin.ModelAdmin):
     list_display = ['logo_img','logo_author']
 admin.site.register(LogoPicturePost, LogoPicturePostModelAdmin)
+
+
+#The main excos post model admin
+class ExcosUserPostModelAdmin (admin.ModelAdmin):
+    prepopulated_fields = {'excos_user_slug': ('excos_user_name',)}
+    list_display = ['excos_user_name','excos_user_email','excos_user_whatsapp_number']
+admin.site.register(ExcosUser, ExcosUserPostModelAdmin)

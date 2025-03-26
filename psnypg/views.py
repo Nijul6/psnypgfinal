@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.urls import reverse
 from django.urls import reverse_lazy
-from .models import ExcosPicturePost,MainHeaderPicturePost
+from .models import ExcosPicturePost,MainHeaderPicturePost,LogoPicturePost
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin  
@@ -21,6 +21,7 @@ class HomeView(ListView):
     def get_context_data(self, **kwargs):  
         context = super().get_context_data(**kwargs)
         context['first_main_header_pictures'] = MainHeaderPicturePost.objects.all()  
+        context['logo_sponsors'] = LogoPicturePost.objects.all()
  
         return context
 

@@ -22,6 +22,22 @@ class MainHeaderPicturePost(models.Model):
         return reverse('home',)
     
 
+#The logo page of sponsor
+class LogoPicturePost(models.Model):
+    logo_img = models.ImageField(upload_to='logo_images/')
+    logo_publish_date = models.DateTimeField(auto_now_add=True)
+    logo_author = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['logo_publish_date']
+    
+    def __str__(self):
+        return f"Post by {self.logo_author.username}"
+
+    def get_absolute_url(self):
+        return reverse('home',)
+    
+    
 class ExcosPicturePost(models.Model):
     excos_img = models.ImageField(upload_to='images/')
     excos_publish_date = models.DateTimeField(auto_now_add=True)
@@ -35,18 +51,20 @@ class ExcosPicturePost(models.Model):
     
     def get_absolute_url(self):
         return reverse('index',)
-
-#The logo page of sponsor
-class LogoPicturePost(models.Model):
-    logo_img = models.ImageField(upload_to='logo_images/')
-    logo_publish_date = models.DateTimeField(auto_now_add=True)
-    logo_author = models.ForeignKey(User, on_delete=models.CASCADE)
-
-    class Meta:
-        ordering = ['logo_publish_date']
     
-    def __str__(self):
-        return f"Post by {self.excos_author.username}"
+#Excos full details model
+class ExcosUser(models.Model):
+    excos_user_name = models.CharField(max_length=255)
+    excos_user_description = models.TextField()
+    excos_user_slug = models.SlugField (max_length=255,blank=True, null=True)
+    excos_user_email = models.EmailField(max_length=255)
+    excos_user_whatsapp_number = models.CharField(max_length=15)
+    excos_user_url = models.URLField(max_length=255, blank=True, null=True)  # LinkedIn URL field
+    excos_user_publish_date = models.DateTimeField(auto_now_add=True)
+    excos_user_author = models.ForeignKey(User, on_delete=models.CASCADE)
+    
+    class Meta:
+        ordering = ['excos_user_publish_date']
 
-    def get_absolute_url(self):
-        return reverse('home',)
+    def __str__(self):
+        return self.excos_user_name

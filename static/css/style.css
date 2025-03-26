@@ -50,11 +50,12 @@ Version:	1.1
 ===============================*/
 body{
     font-family: sans-serif;
-	font-family: Georgia;
+	font-family: sans-serif;
 	font-weight: 400;
 	font-size:14px;
 	color:#888;
 }
+
 .pro-features {
 	position: fixed;
 	right: -300px;
@@ -183,7 +184,7 @@ body{
 	font-size: 15px;
 	margin-bottom: 5px;
 	font-weight: 500;
-	font-family: Georgia;
+	font-family: sans-serif;
 }
 .color-plate p {
 	font-size: 13px;
@@ -332,7 +333,7 @@ body{
 .header .nav li a {
 	color: #98681e;
 	font-size: 14px;
-	font-family: Georgia;
+	font-family: sans-serif;
 	font-weight: 500;
 	text-transform: capitalize;
 	padding: 20px 10px;
@@ -362,7 +363,7 @@ body{
 }
 .header .nav li.active a{
 	color:#005200;
-	font-family: Georgia;
+	font-family: sans-serif;
 }
 .header .nav li:hover a:before{
 	opacity:1;
@@ -606,10 +607,10 @@ body{
 	margin-top:150px;
 }
 .slider .single-slider h1 {
-	color: #98681e;
-	font-size: 38px;
+	color: #005200;
+	font-size: 48px;
 	font-weight: 700;
-	font-family: Georgia;
+	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
 	line-height: 42px;
@@ -621,7 +622,7 @@ body{
 	color: #98681e;
 	margin-top: 27px;
 	font-weight: 400;
-	font-family: Georgia;
+	font-family: sans-serif;
 }
 .slider .single-slider .button{
 	margin-top:30px;
@@ -632,7 +633,7 @@ body{
 	font-weight:500;
 	display:inline-block;
 	margin:0;
-	font-family: Georgia;
+	font-family: sans-serif;
 	margin-right:10px;
 }
 .slider .single-slider .btn:last-child{
@@ -773,7 +774,7 @@ body{
 	font-size: 20px;
 	font-weight:600;
 	display:inline-block;
-	font-family: Georgia;
+	font-family: sans-serif;
 	text-transform:capitalize;
 	color:#fff;
 	margin-top:13px;
@@ -974,7 +975,7 @@ body{
 .why-choose .choose-left h3{
 	font-size:24px;
 	font-weight:600;
-	font-family: Georgia;
+	font-family: sans-serif;
 	color:#98681e;
 	position:relative;
 	padding-bottom:20px;
@@ -1036,7 +1037,7 @@ body{
 	left: 50%;
 	top: 50%;
 	margin-left: -35px;
-	font-family: Georgia;
+	font-family: sans-serif;
 	margin-top: -35px;
 	font-size: 21px;
 	background: #005200;
@@ -1045,13 +1046,13 @@ body{
 }
 .why-choose .choose-right .video:hover{
 	transform:scale(1.1);
-	font-family: Georgia;
+	font-family: sans-serif;
 }
 .why-choose .video-image .waves-block .waves {
 	position: absolute;
 	width: 200px;
 	height: 200px;
-	font-family: Georgia;
+	font-family: sans-serif;
 	background: #fff;
 	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1132,7 +1133,7 @@ body{
 }
 .call-action .content .second:hover{
 	color:#005200;
-	font-family: Georgia;
+	font-family: sans-serif;
 	border-color:transparent;
 	background:#fff;
 }
@@ -1734,7 +1735,7 @@ body{
     background-position: center;
     padding: 100px 0;
     position: relative;
-    background-color: fff; /* Fallback color */
+    background-color:#F6F7FB /* Fallback color */
 }
 
 .clients:before {
@@ -1744,7 +1745,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(164, 77, 77, 0.5); /* Semi-transparent overlay */
+    background-color: fff; /* Semi-transparent overlay */
     z-index: 1; /* Places the overlay above the background image */
 }
 
@@ -1755,19 +1756,27 @@ body{
 
 .clients .owl-carousel {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Spread out items */
     flex-wrap: wrap;
-}
-
-.clients .single-clients img {
-    width: 100%;
-    cursor: pointer;
-    text-align: center;
-    padding: 0 35px;
+    align-items: center; /* Vertically align items if they are of different heights */
 }
 
 .clients .single-clients {
+    width: 120px; /* Box width */
+    height: 100px; /* Box height */
+    overflow: hidden; /* Hides any overflow of the image */
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center the image inside the box */
+    align-items: center; /* Center the image vertically */
+}
+
+.clients .single-clients img.client-logo {
+    width: auto; /* Keep the width responsive */
+    height: auto; /* Adjusts the height to maintain the aspect ratio */
+    max-width: 400%; /* Make the logo bigger by using a percentage of the container */
+    max-height: 600%; /* Restrict the height to 80% of the container's height */
+    display: block; /* Ensures the image is treated as a block element */
 }
 
 /*========================
@@ -2841,7 +2850,7 @@ body{
 }
 .appointment .button .btn{
 	font-weight:500;
-	font-family: Georgia;
+	font-family: sans-serif;
 }
 .appointment .button .btn:hover{
 	color:#fff;
