@@ -27,3 +27,6 @@ class HomeView(ListView):
     
 def whoWeAre (request):
     return render (request, 'psnypg/who_we_are.html')
+
+def Contact_Us (request):
+    return render (request, 'psnypg/contact.html')
