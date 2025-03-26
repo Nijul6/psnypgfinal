@@ -59,7 +59,8 @@ class ExcosUser(models.Model):
     excos_user_slug = models.SlugField (max_length=255,blank=True, null=True)
     excos_user_email = models.EmailField(max_length=255)
     excos_user_whatsapp_number = models.CharField(max_length=15)
-    excos_user_url = models.URLField(max_length=255, blank=True, null=True)  # LinkedIn URL field
+    excos_user_img = models.ImageField(upload_to='excos_images/')
+    excos_user_linkedIn_url = models.URLField(max_length=255, blank=True, null=True)  # LinkedIn URL field
     excos_user_publish_date = models.DateTimeField(auto_now_add=True)
     excos_user_author = models.ForeignKey(User, on_delete=models.CASCADE)
     

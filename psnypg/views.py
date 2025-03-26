@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.urls import reverse
 from django.urls import reverse_lazy
-from .models import ExcosPicturePost,MainHeaderPicturePost,LogoPicturePost
+from .models import ExcosPicturePost,MainHeaderPicturePost,LogoPicturePost,ExcosUser
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin  
