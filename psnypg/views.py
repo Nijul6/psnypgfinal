@@ -43,3 +43,10 @@ def Dala2025 (request):
 
 def Contact_Us (request):
     return render (request, 'psnypg/contact.html')
+
+# Excos User page
+class ExcosUserPage(ListView): 
+    model = ExcosUser
+    template_name = 'psnypg/excos_user.html'
+    def ExcosUserPage (request):
+        return render(request, 'psnypg/excos_user.html', {})

@@ -1,7 +1,7 @@
 
 from django.urls import path
 from . import views
-from .views import HomeView
+from .views import HomeView,ExcosUserPage
 
 urlpatterns = [
     #path('', views.index, name='index'),  # Make root URL go to index
@@ -14,4 +14,5 @@ urlpatterns = [
     path('ourimpact/', views.OurImpact, name='ourimpact'),
     path('contact_us/', views.Contact_Us, name='contact_us'),
     path('dala2025/', views.Dala2025, name='dala2025'),
+    path('excos_user/', ExcosUserPage.as_view(), name='excos_user'),
 ]
