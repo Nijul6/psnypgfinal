@@ -38,5 +38,8 @@ def WhyPsn (request):
 def OurImpact (request):
     return render (request, 'psnypg/our_impact.html')
 
+def Dalas2025 (request):
+    return render (request, 'psnypg/dalas_2025.html')
+
 def Contact_Us (request):
     return render (request, 'psnypg/contact.html')
