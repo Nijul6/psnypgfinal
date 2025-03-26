@@ -44,9 +44,13 @@ def Dala2025 (request):
 def Contact_Us (request):
     return render (request, 'psnypg/contact.html')
 
-# Excos User page
-class ExcosUserPage(ListView): 
+class ExcosUserPage(ListView):
     model = ExcosUser
     template_name = 'psnypg/excos_user.html'
-    def ExcosUserPage (request):
-        return render(request, 'psnypg/excos_user.html', {})
+    context_object_name = 'excos_users'
+
+    def get_queryset(self):
+        email = self.kwargs.get('email')  # Get email from the URL
+        if email:
+            return ExcosUser.objects.filter(excos_user_email=email)  # Show specific user by email
+        return ExcosUser.objects.all()  # Show all users if no email is provided
