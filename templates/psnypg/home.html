@@ -1,0 +1,561 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+
+<!-- Slider Area -->
+<section class="slider">
+    <div class="hero-slider">
+        <!-- Start Single Slider -->
+        {% for first_main_header_picture in first_main_header_pictures %}
+        <div class="single-slider" style="background-image:url('{{ first_main_header_picture.main_header_img.url }}')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="text">
+                            <h1 style="color: #005200;">{{ first_main_header_picture.main_header_title }}</h1><br>
+                            <h5>{{ first_main_header_picture.main_header_description }} </h5>
+                            <div class="button">
+                                <a href="#" class="btn">Join Us</a>
+                                <a href="#" class="btn primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Closing the single-slider div here -->
+        {% endfor %}
+    </div> <!-- Closing the hero-slider div here -->
+</section>
+<!--/ End Slider Area -->
+
+
+
+		
+		<!-- Start Schedule Area -->
+		<section class="schedule">
+			<div class="container">
+				<div class="schedule-inner">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12 ">
+							<!-- single-schedule -->
+							<div class="single-schedule first">
+								<div class="inner">
+									<div class="icon">
+										<i class="fa fa-ambulance"></i>
+									</div>
+									<div class="single-content">
+										<!--<span>Lorem Amet</span>-->
+										<h4>Our Mission</h4>
+										<p>To develop young pharmacists into agents of positive change at the 
+											local, national, and international levels by equipping them with 
+											the skills, knowledge, and network necessary to make meaningful 
+											contributions to healthcare and society.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule middle">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-prescription"></i>
+									</div>
+									<div class="single-content">
+										<h4>Our Vision</h4>
+										<p>To cultivate a growing community of young pharmacists actively 
+											contributing to the improvement of Nigeria’s healthcare system.</p>
+										<p>To ensure the continuous development of pharmacy as an indispensable profession, 
+											occupying a unique and impactful role in healthcare delivery.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule last">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-ui-clock"></i>
+									</div>
+									<div class="single-content">
+										<h4>Core Value</h4>
+										<p>To be the leading pharmacy in our community, recognized for our 
+											commitment to health, innovation, and customer care. We aspire to 
+											empower individuals to make informed healthcare choices, 
+											promoting wellness and ensuring better outcomes for all.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/End Start schedule Area -->
+
+
+
+
+
+		<!-- Start Why choose -->
+		<section class="why-choose section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h3 style="color: #98681e;font-family: sans-serif;">Pharmaceutical Society of Nigeria – Young Pharmacists Group (PSN-YPG)</h3>
+							<img src="{% static 'img/section-img.png'%}" alt="#">
+						</div>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center align-items-center text-center">
+					<div class="col-lg-4 col-12">
+						<!-- Start Choose Left -->
+						<div class="choose-left">
+							<h3>About PSN-YPG</h3>
+							<p>The Young Pharmacists Group (YPG) is a vibrant interest group under the Pharmaceutical 
+								Society of Nigeria (PSN), dedicated to empowering pharmacists aged 35 and below, or 
+								within five years of graduation. We equip young pharmacists with the skills, knowledge, 
+								and network they need to shape the future of healthcare in Nigeria and beyond.</p>
+						</div>
+						<div class="btn-wrapper">
+							<a href=" " class="btn btn-primary" style="border-radius:5px;font-family: sans-serif;color:fff;">Learn More</a>
+						</div>
+						<!-- End Choose Left -->
+					</div>
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Rights -->
+						<div class="choose-right">
+							<div class="video-image">
+								<img src="{% static 'img/Tekena.jpg'%}" style="height: 410px; width: 320px; border-radius: 10px;" alt="#">
+							</div>
+						</div>
+						<!-- End Choose Rights -->
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!--/ End Why choose -->
+
+
+
+		
+
+
+
+		<!-- Start clients -->
+<div class="clients overlay">
+    <div class="container">
+        <div class="row">
+			<div class="col-lg-12">
+				<div class="section-title">
+					<h3 style="color: #98681e;font-family: sans-serif;">Our Strategic Partners</h3>
+				</div>
+			</div>
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="owl-carousel clients-slider">
+					{% for logo_sponsor in logo_sponsors%}
+                    <div class="single-clients">
+                        <img src="{{ logo_sponsor.logo_img.url }}" alt="#">
+                    </div>
+					{% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ End clients -->
+
+
+
+
+<!-- 
+
+<section class="Feautes section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h3 style="color: #98681e;font-family: sans-serif;">We Are Always Ready to Help You & Your Family</h3>
+                    <img src="{% static 'img/section-img.png'%}" alt="#">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <div class="single-features">
+                    <div class="signle-icon">
+                        <i class="icofont icofont-ambulance-cross"></i>
+                    </div>
+                    <h3>Emergency Help</h3>
+                    <p>At Psn-ypg, we are here to support you during medical emergencies. 
+                        While we are not an emergency medical facility, we can assist with</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="single-features">
+                    <div class="signle-icon">
+                        <i class="icofont icofont-medical-sign-alt"></i>
+                    </div>
+                    <h3>Enriched Pharmacy</h3>
+                    <p>At Psn-ypg, we go beyond prescriptions—offering personalized care, 
+                        expert advice, and essential health services to enrich your well-being.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="single-features last">
+                    <div class="signle-icon">
+                        <i class="icofont icofont-stethoscope"></i>
+                    </div>
+                    <h3>Medical Treatment</h3>
+                    <p>At Psn-ypg, we offer expert advice, personalized medication management, and 
+                        support to help you achieve better health.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+-->
+
+
+
+
+		
+		<!-- Start Fun-facts -->
+		<div id="fun-facts" class="fun-facts section overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont icofont-home"></i>
+							<div class="content">
+								<span class="counter">3468</span>
+								<p>Hospital Rooms</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont icofont-user-alt-3"></i>
+							<div class="content">
+								<span class="counter">557</span>
+								<p>Specialist Doctors</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont-simple-smile"></i>
+							<div class="content">
+								<span class="counter">4379</span>
+								<p>Happy Patients</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont icofont-table"></i>
+							<div class="content">
+								<span class="counter">32</span>
+								<p>Years of Experience</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Fun-facts -->
+		
+	
+		
+		<!-- Start portfolio -->
+		<section class="portfolio section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h3 style="color: #98681e;font-family: sans-serif;">Meet the committee cordinators and excos</h3>
+							<img src="{% static 'img/section-img.png'%}" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 col-12">
+						<div class="owl-carousel portfolio-slider">
+							{% for post in object_list %}
+							<div class="single-pf">
+								<img src="{{ post.excos_img.url }}" style="height: 300px;border-radius:10px;" alt="#">
+								<a href="{% url 'excos_user'%}" class="btn">View Details</a>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End portfolio -->
+		
+		<!-- Start service -->
+		<section class="services section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h3 style="color: #98681e;font-family: sans-serif;">We Offer Different Services To Improve Your Health</h3>
+							<img src="{% static 'img/section-img.png'%}" alt="#">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont icofont-prescription"></i>
+							<h4><a href="service-details.html">General Treatment</a></h4>
+							<p>We provide expert guidance and support for managing common health 
+								conditions with personalized care and effective solutions.</p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont icofont-tooth"></i>
+							<h4><a href="service-details.html">Teeth Whitening</a></h4>
+							<p>Brighten your smile with our safe and effective teeth whitening solutions. 
+								Get professional results with personalized treatments tailored to your needs. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont icofont-heart-alt"></i>
+							<h4><a href="service-details.html">Heart Surgery</a></h4>
+							<p>We offer expert care and advanced treatments for heart surgery, ensuring safe 
+								procedures and personalized recovery plans for optimal heart health.</p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont icofont-listening"></i>
+							<h4><a href="service-details.html">Ear Treatment</a></h4>
+							<p>We provide specialized care for ear infections, hearing issues, and 
+								general ear health, with personalized treatments to restore comfort and function.</p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont icofont-eye-alt"></i>
+							<h4><a href="service-details.html">Vision Problems</a></h4>
+							<p>We offer expert care for various vision issues, from eye exams to treatments, 
+								helping you achieve clearer, healthier eyesight.</p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont icofont-blood"></i>
+							<h4><a href="service-details.html">Blood Transfusion</a></h4>
+							<p>We provide safe and efficient blood transfusion services, ensuring proper 
+								care and monitoring for optimal patient health. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End service -->
+		
+	
+		
+		
+		
+		<!-- Start Blog Area -->
+		<section class="blog section" id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h3 style="color: #98681e;font-family: sans-serif;">Keep up with Our Most Recent Medical News.</h3>
+							<img src="{% static 'img/section-img.png'%}" alt="#">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="{% static 'img/psn.jpg'%}"style="height: 320px;border-radius:10px;" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">24 Mar, 2025</div>
+									<h4 style="color: #98681e;font-family: sans-serif;"><a href="blog-single.html">We have annnocuced our new product.</a></h4>
+									<p class="text" style="color: #fff;">We’re excited to announce the launch of our new product! Designed to enhance your experience. 
+										Visit us today to learn more and try it for yourself.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="{% static 'img/psn.jpg'%}"style="height: 300px;border-radius:10px;" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">24 Mar, 2025</div>
+									<h4 style="color: #98681e;font-family: sans-serif;"><a href="blog-single.html">Top five way for solving teeth problems.</a></h4>
+									<p class="text"  style="color: #fff;">We’re excited to announce the launch of our new product! Designed to enhance your experience. 
+										Visit us today to learn more and try it for yourself.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="{% static 'img/psn.jpg'%}"style="height: 300px;border-radius:10px;" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">24 Mar, 2025</div>
+									<h4 style="color: #98681e;font-family: sans-serif;"><a href="blog-single.html">We provide highly business soliutions.</a></h4>
+									<p class="text"  style="color: #fff;">We’re excited to announce the launch of our new product! Designed to enhance your experience. 
+										Visit us today to learn more and try it for yourself.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Blog Area -->
+
+
+
+
+
+		
+		<!-- Start Appointment -->
+		<section class="appointment">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h3 style="color: #98681e;font-family: sans-serif;">Have questions or want to collaborate? Reach out to us directly.</h3>
+							<img src="{% static 'img/section-img.png'%}" alt="#">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-12">
+						<form class="form" action="#">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="name" type="text" placeholder="Name">
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="email" type="email" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="phone" type="text" placeholder="Phone">
+									</div>
+								</div>		
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input type="text" placeholder="Date" id="datepicker">
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-12">
+									<div class="form-group">
+										<textarea name="message" placeholder="Write Your Message Here....."></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-5 col-md-4 col-12">
+									<div class="form-group">
+										<div class="button">
+											<button type="submit" class="btn">Book An Appointment</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-7 col-md-8 col-12">
+									<p>( We will be confirm by an Text Message )</p>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6 col-md-12 ">
+						<div class="appointment-image">
+							<img src="{% static 'img/contact-img.png'%}"style="border-radius:10px;" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Appointment -->
+		
+		<!-- Start Newsletter Area -->
+		<section class="newsletter section">
+			<div class="container">
+				<div class="row ">
+					<div class="col-lg-6  col-12">
+						<!-- Start Newsletter Form -->
+						<div class="subscribe-text ">
+							<h6>Sign up for newsletter</h6>
+							<p class="">Stay updated with the latest news, special offers, and health tips<br> and never miss an update.</p>
+						</div>
+						<!-- End Newsletter Form -->
+					</div>
+					<div class="col-lg-6  col-12">
+						<!-- Start Newsletter Form -->
+						<div class="subscribe-form ">
+							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+								<input name="EMAIL" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Your email address'" required="" type="email">
+								<button class="btn">Subscribe</button>
+							</form>
+						</div>
+						<!-- End Newsletter Form -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /End Newsletter Area -->
+		
+		
+
+{% endblock %}
