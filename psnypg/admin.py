@@ -1,7 +1,7 @@
 from django.contrib import admin
 # Register your models here.
 from . import models
-from .models import ExcosPicturePost,MainHeaderPicturePost
+from .models import ExcosPicturePost,MainHeaderPicturePost,LogoPicturePost
 
 #The main header picture post model admin
 class MainHeaderPicturePostModelAdmin (admin.ModelAdmin):
@@ -13,3 +13,8 @@ admin.site.register(MainHeaderPicturePost, MainHeaderPicturePostModelAdmin)
 class ExcosPicturePostModelAdmin (admin.ModelAdmin):
     list_display = ['excos_img','excos_author']
 admin.site.register(ExcosPicturePost, ExcosPicturePostModelAdmin)
+
+# the Logo caroseul picture
+class LogoPicturePostModelAdmin (admin.ModelAdmin):
+    list_display = ['logo_img','logo_author']
+admin.site.register(LogoPicturePost, LogoPicturePostModelAdmin)

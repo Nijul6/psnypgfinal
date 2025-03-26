@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from datetime import datetime, date
 
+#The main header logo of the page
 class MainHeaderPicturePost(models.Model):
     main_header_title = models.CharField(max_length=255, blank=True, null=True)
     main_header_description = models.TextField()
@@ -34,3 +35,18 @@ class ExcosPicturePost(models.Model):
     
     def get_absolute_url(self):
         return reverse('index',)
+
+#The logo page of sponsor
+class LogoPicturePost(models.Model):
+    logo_img = models.ImageField(upload_to='logo_images/')
+    logo_publish_date = models.DateTimeField(auto_now_add=True)
+    logo_author = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['logo_publish_date']
+    
+    def __str__(self):
+        return f"Post by {self.excos_author.username}"
+
+    def get_absolute_url(self):
+        return reverse('home',)

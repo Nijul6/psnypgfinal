@@ -1728,23 +1728,48 @@ body{
 /*========================
 	Start Clients CSS
 ==========================*/
-.clients{
-	background-image:url('img/client-bg.jpg');
-	background-size:cover;
-	background-position:center;
-	padding:100px 0px;
-	position:relative;
+.clients {
+    background-image: url('img/client-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    background-color: fff; /* Fallback color */
 }
-.clients .single-clients{
-	
+
+.clients:before {
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(164, 77, 77, 0.5); /* Semi-transparent overlay */
+    z-index: 1; /* Places the overlay above the background image */
 }
+
+.clients .container {
+    position: relative;
+    z-index: 2; /* Ensures the content stays above the overlay */
+}
+
+.clients .owl-carousel {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .clients .single-clients img {
-	width: 100%;
-	cursor: pointer;
-	text-align: center;
-	float: none;
-	padding: 0 35px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 35px;
 }
+
+.clients .single-clients {
+    margin-bottom: 20px;
+}
+
 /*========================
 	End Clients CSS
 ==========================*/
@@ -3990,6 +4015,7 @@ body{
 .section.db {
     background-color: #005200;
 }
+
 
 .footer .footer-top:before{
 	position:absolute;
