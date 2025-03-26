@@ -13,5 +13,5 @@ urlpatterns = [
     path('whypsn/', views.WhyPsn, name='whypsn'),
     path('ourimpact/', views.OurImpact, name='ourimpact'),
     path('contact_us/', views.Contact_Us, name='contact_us'),
-    path('dalas2025/', views.Dalas2025, name='dalas2025'),
+    path('dala2025/', views.Dala2025, name='dala2025'),
 ]
