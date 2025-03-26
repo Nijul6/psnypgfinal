@@ -8,4 +8,5 @@ urlpatterns = [
     # other URL patterns...
     path('', HomeView.as_view(), name="home"),
     path('home/', HomeView.as_view(), name='home'),
+    path('whoweare/', views.whoWeAre, name='whoweare'),
 ]

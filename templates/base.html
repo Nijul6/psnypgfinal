@@ -95,8 +95,14 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="index.html">Home <i class="icofont-rounded-down"></i></a></li>
-											<li><a href="#">Who we are </a></li>
+											<li class="active"><a href="{% url 'home' %}">Home <i class="icofont-rounded-down"></i></a></li>
+                                            <li><a href="#">About Us <i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="{% url 'whoweare' %}">Who We Are</a></li>
+													<li><a href="blog-single.html">What We Do</a></li>
+                                                    <li><a href="blog-single.html">Why PSN-YPG Matters</a></li>
+												</ul>
+											</li>
 											<li><a href="#">YPG Team </a></li>
 											<li><a href="#">Projects <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">

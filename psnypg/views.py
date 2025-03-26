@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.urls import reverse
 from django.urls import reverse_lazy
-from .models import ExcosPicturePost
+from .models import ExcosPicturePost,MainHeaderPicturePost
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin  
@@ -17,5 +17,13 @@ def index (request):
 class HomeView(ListView): 
     model = ExcosPicturePost
     template_name = 'psnypg/home.html'
-    def HomeView (request):
-        return render(request, 'psnypg/home.html', {})
+    
+    def get_context_data(self, **kwargs):  
+        context = super().get_context_data(**kwargs)
+        context['first_main_header_pictures'] = MainHeaderPicturePost.objects.all()  
+ 
+        return context
+
+    
+def whoWeAre (request):
+    return render (request, 'psnypg/who_we_are.html')

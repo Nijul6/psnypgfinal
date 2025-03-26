@@ -2,69 +2,32 @@
 {% load static %}
 {% block content%}
 
-		<!-- Slider Area -->
-		<section class="slider">
-			<div class="hero-slider">
-				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('{% static 'img/slider2.jpg' %}')">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>I take a personalized approach to men’s healthcare to help you uncover the root cause 
-										of your health concerns and guide you toward lasting wellness. </p>
-									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
-										<a href="#" class="btn primary">Learn More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Slider -->
-				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('{% static 'img/slider.jpg'%}')">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>I take a personalized approach to women’s healthcare to help you uncover the root cause 
-										of your health concerns and guide you toward lasting wellness. </p>
-									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
-										<a href="#" class="btn primary">About Us</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Start End Slider -->
-				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('{% static 'img/slider3.jpg'%}')">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>I take a personalized approach to women’s healthcare to help you uncover the root cause 
-										of your health concerns and guide you toward lasting wellness. </p>
-									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
-										<a href="#" class="btn primary">Conatct Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Slider -->
-			</div>
-		</section>
-		<!--/ End Slider Area -->
+<!-- Slider Area -->
+<section class="slider">
+    <div class="hero-slider">
+        <!-- Start Single Slider -->
+        {% for first_main_header_picture in first_main_header_pictures %}
+        <div class="single-slider" style="background-image:url('{{ first_main_header_picture.main_header_img.url }}')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="text">
+                            <h1>{{ first_main_header_picture.main_header_title }}</h1>
+                            <p>{{ first_main_header_picture.main_header_description }} </p>
+                            <div class="button">
+                                <a href="#" class="btn">Join Us</a>
+                                <a href="#" class="btn primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Closing the single-slider div here -->
+        {% endfor %}
+    </div> <!-- Closing the hero-slider div here -->
+</section>
+<!--/ End Slider Area -->
+
 
 
 		
@@ -82,11 +45,11 @@
 									</div>
 									<div class="single-content">
 										<!--<span>Lorem Amet</span>-->
-										<h4>Mission</h4>
-										<p>To be the leading pharmacy in our community, recognized for our 
-											commitment to health, innovation, and customer care. We aspire to 
-											empower individuals to make informed healthcare choices, 
-											promoting wellness and ensuring better outcomes for all.</p>
+										<h4>Our Mission</h4>
+										<p>To develop young pharmacists into agents of positive change at the 
+											local, national, and international levels by equipping them with 
+											the skills, knowledge, and network necessary to make meaningful 
+											contributions to healthcare and society.</p>
 									</div>
 								</div>
 							</div>
@@ -99,11 +62,11 @@
 										<i class="icofont-prescription"></i>
 									</div>
 									<div class="single-content">
-										<h4>Vision</h4>
-										<p>To be the leading pharmacy in our community, recognized for our 
-											commitment to health, innovation, and customer care. We aspire to 
-											empower individuals to make informed healthcare choices, 
-											promoting wellness and ensuring better outcomes for all.</p>
+										<h4>Our Vision</h4>
+										<p>To cultivate a growing community of young pharmacists actively 
+											contributing to the improvement of Nigeria’s healthcare system.</p>
+										<p>To ensure the continuous development of pharmacy as an indispensable profession, 
+											occupying a unique and impactful role in healthcare delivery.</p>
 									</div>
 								</div>
 							</div>
@@ -132,13 +95,16 @@
 		<!--/End Start schedule Area -->
 
 
+
+
+		
 		<!-- Start Why choose -->
 		<section class="why-choose section" >
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>We Offer Different Services To Improve Your Health</h2>
+							<h3>Pharmaceutical Society of Nigeria – Young Pharmacists Group (PSN-YPG)</h3>
 							<img src="{% static 'img/section-img.png'%}" alt="#">
 						</div>
 					</div>
@@ -148,11 +114,11 @@
 						<!-- Start Choose Left -->
 						<div class="choose-left">
 							<h3>Who We Are</h3>
-							<p>At Psn-ypg, we are more than just a place to pick up prescriptions. We are a 
-								dedicated team of healthcare professionals committed to providing comprehensive 
-								pharmaceutical care that enhances the lives of our patients. With a deep understanding 
-								of the critical role medication plays in health and wellness, we are here to 
-								offer expert advice, compassionate service, and personalized care tailored to each individual. </p>
+							<p>The Young Pharmacists Group (YPG) is a dynamic interest group under the umbrella of the 
+								Pharmaceutical Society of Nigeria (PSN), comprising pharmacists who are either 35 years 
+								of age or younger or have graduated from an accredited pharmacy school within the last five years. 
+								Since its inception, PSN-YPG has become a driving force for positive change, empowering young 
+								pharmacists to actively shape Nigeria’s healthcare landscape while fostering personal and professional growth.</p>
 							<p>At Psn-ypg, we are your trusted healthcare partner, making sure you receive the best 
 								care possible for a healthier tomorrow. </p>
 							<div class="row">
@@ -178,7 +144,7 @@
 						<!-- Start Choose Rights -->
 						<div class="choose-right">
 							<div class="video-image">
-								<img src="{% static 'img/pf2.jpg'%}"style="height: 450px; width: auto;" alt="#">
+								<img src="{% static 'img/Tekena.jpg'%}"style="height: 500px; width: 450px;border-radius: 5px;" alt="#">
 							</div>
 						</div>
 						<!-- End Choose Rights -->
@@ -195,7 +161,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>We Are Always Ready to Help You & Your Family</h2>
+							<h3>We Are Always Ready to Help You & Your Family</h3>
 							<img src="{% static 'img/section-img.png'%}" alt="#">
 						</div>
 					</div>
@@ -241,6 +207,10 @@
 			</div>
 		</section>
 		<!--/ End Feautes -->
+
+
+
+
 		
 		<!-- Start Fun-facts -->
 		<div id="fun-facts" class="fun-facts section overlay">
@@ -303,7 +273,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Meet the committee cordinators and excos</h2>
+							<h3>Meet the committee cordinators and excos</h3>
 							<img src="{% static 'img/section-img.png'%}" alt="#">
 						</div>
 					</div>
@@ -332,7 +302,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>We Offer Different Services To Improve Your Health</h2>
+							<h3>We Offer Different Services To Improve Your Health</h3>
 							<img src="{% static 'img/section-img.png'%}" alt="#">
 						</div>
 					</div>
@@ -413,7 +383,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Keep up with Our Most Recent Medical News.</h2>
+							<h3>Keep up with Our Most Recent Medical News.</h3>
 							<img src="{% static 'img/section-img.png'%}" alt="#">
 						</div>
 					</div>
@@ -428,7 +398,7 @@
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">24 Mar, 2025</div>
-									<h2><a href="blog-single.html">We have annnocuced our new product.</a></h2>
+									<h3><a href="blog-single.html">We have annnocuced our new product.</a></h3>
 									<p class="text">We’re excited to announce the launch of our new product! Designed to enhance your experience. 
 										Visit us today to learn more and try it for yourself.</p>
 								</div>
@@ -445,7 +415,7 @@
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">24 Mar, 2025</div>
-									<h2><a href="blog-single.html">Top five way for solving teeth problems.</a></h2>
+									<h3><a href="blog-single.html">Top five way for solving teeth problems.</a></h3>
 									<p class="text">We’re excited to announce the launch of our new product! Designed to enhance your experience. 
 										Visit us today to learn more and try it for yourself.</p>
 								</div>
@@ -462,7 +432,7 @@
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">24 Mar, 2025</div>
-									<h2><a href="blog-single.html">We provide highly business soliutions.</a></h2>
+									<h3><a href="blog-single.html">We provide highly business soliutions.</a></h3>
 									<p class="text">We’re excited to announce the launch of our new product! Designed to enhance your experience. 
 										Visit us today to learn more and try it for yourself.</p>
 								</div>
@@ -521,7 +491,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>We Are Always Ready to Help You. Book An Appointment</h2>
+							<h3>We Are Always Ready to Help You. Book An Appointment</h3>
 							<img src="{% static 'img/section-img.png'%}" alt="#">
 						</div>
 					</div>
