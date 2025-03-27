@@ -41,6 +41,9 @@ def OurImpact (request):
 def Dala2025 (request):
     return render (request, 'psnypg/dala_2025.html')
 
+def DalaYps (request):
+    return render (request, 'psnypg/dala_yps.html')
+
 def Contact_Us (request):
     return render (request, 'psnypg/contact.html')
 

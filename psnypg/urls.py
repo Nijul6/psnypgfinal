@@ -11,6 +11,7 @@ urlpatterns = [
     path('ourimpact/', views.OurImpact, name='ourimpact'),
     path('contact_us/', views.Contact_Us, name='contact_us'),
     path('dala2025/', views.Dala2025, name='dala2025'),
+    path('dala_yps/', views.DalaYps, name='dala_yps'),
     # Updated URL to accept email as parameter
     path('excos_user/', ExcosUserPage.as_view(), name='excos_user'),  # List all users
     path('excos_user/<str:email>/', ExcosUserPage.as_view(), name='excos_user')
