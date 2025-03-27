@@ -47,6 +47,9 @@ def DalaYps (request):
 def Nafdac_Yada (request):
     return render (request, 'psnypg/nafdac_yada.html')
 
+def Why_Nafdac (request):
+    return render (request, 'psnypg/why_nafdac_yada.html')
+
 def Contact_Us (request):
     return render (request, 'psnypg/contact.html')
 

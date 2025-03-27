@@ -13,6 +13,7 @@ urlpatterns = [
     path('dala2025/', views.Dala2025, name='dala2025'),
     path('dala_yps/', views.DalaYps, name='dala_yps'),
     path('nafdac_yada/', views.Nafdac_Yada, name='nafdac_yada'),
+    path('why_nafdac_yada/', views.Why_Nafdac, name='why_nafdac_yada'),
     # Updated URL to accept email as parameter
     path('excos_user/', ExcosUserPage.as_view(), name='excos_user'),  # List all users
     path('excos_user/<str:email>/', ExcosUserPage.as_view(), name='excos_user')
