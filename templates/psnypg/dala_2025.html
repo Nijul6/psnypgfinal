@@ -50,41 +50,6 @@
                                 <li>Enjoy Enhanced Visibility through conference materials, speaking 
                                     opportunities, and direct engagement with delegates.</li>
                             </ol>
-
-
-
-							<div class="breadcrumbs overlay">
-								<div class="container">
-									<div class="bread-inner">
-										<div class="row">
-											<div class="col-12">
-												<h2>Let’s Shape the Future Together</h2>
-												<p  style="color: #fff;">At PSN-YPG, we believe young pharmacists are not just
-													participants in Nigeria’s healthcare system — they<br> are its 
-													future leaders. Join us in equipping the next generation of 
-													pharmacists with the tools, <br>knowledge, and confidence they 
-													need to make a lasting impact.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
-							
-                            <h6>For inquiries, sponsorship, or collaboration:</h6>
-
-							<div class="row">
-								<div class="col-lg-7">
-									<ul class="list">
-										<li><i class="fa fa-caret-right"></i>Email: psnypg@gmail.com</li>
-										<li><i class="fa fa-caret-right"></i>Phone: +2347031698451 (Luqman Abbas)
-                                            </li>
-										<li><i class="fa fa-caret-right"></i>Phone: +2348167274090 (Tekena George)</li>
-                                        <li><i class="fa fa-caret-right"></i>Website: www.psnypgnational.org </li>
-									</ul>
-								</div>
-							</div>
 						</div>
 						<!-- End Choose Left -->
 					</div>
@@ -119,10 +84,55 @@
 							</div>
 						</div>
 					</div>
+				</div><br>				
+				
+
+			
+<!-- About Start -->
+<div class="container-xxl py-5">
+	<div class="container">
+		<div class="row g-5">
+			<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="{% static 'img/intro.jpg' %}"style="height: 400px; width: 100%; object-fit: cover; border-radius:5px;" class="d-block w-100" alt="...">
+					  </div>
+					  <div class="carousel-item">
+						<img src="{% static 'img/rep.jpg' %}"style="height: 400px; width: 100%; object-fit: cover; border-radius:5px;" class="d-block w-100" alt="...">
+					  </div>
+					  <div class="carousel-item">
+						<img src="{% static 'img/img.jpeg' %}"style="height: 400px; width: 100%; object-fit: cover; border-radius:5px;" class="d-block w-100" alt="...">
+					  </div>
+					</div>
+				  </div>
+			   </div>
+			<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+				<h3 class="mb-4"style="color:#005200;">For inquiries, sponsorship, or collaboration:</h3>
+				<div class="row gy-2 gx-4 mb-4">
+					<div class="col-sm-10">
+						<p class="mb-0"style="font-family: 'serif';"><i class="fa fa-arrow-right text-primary me-2"></i> Email: psnypg@gmail.com</p>
+					</div>
+					<div class="col-sm-10">
+						<p class="mb-0"style="font-family: 'serif';"><i class="fa fa-arrow-right text-primary me-2"></i> Phone: +2348167274090 (Tekena George) </p>
+					</div>
+					<div class="col-sm-10">
+						<p class="mb-0"style="font-family: 'serif';"><i class="fa fa-arrow-right text-primary me-2"></i>Phone: +2347031698451 (Luqman Abbas) </p>
+					</div>
+					<div class="col-sm-10">
+						<p class="mb-0"style="font-family: 'serif';"><i class="fa fa-arrow-right text-primary me-2"></i>Website: www.psnypgnational.org</p>
+					</div>
 				</div>
+				<a class="btn btn-primary py-3 px-5 mt-2"style="border-radius: 15px;color:#fff;" href="{% url 'contact_us' %}">Contact Us</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- About End -->
+
 <br><br>
 				
-				<!-- End Breadcrumbs -->
+				
 
 
 {% endblock %}
