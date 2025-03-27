@@ -15,8 +15,8 @@
                             <h1 style="color: #005200;">{{ first_main_header_picture.main_header_title }}</h1><br>
                             <h5>{{ first_main_header_picture.main_header_description }} </h5>
                             <div class="button">
-                                <a href="#" class="btn">Join Us</a>
-                                <a href="#" class="btn primary">Learn More</a>
+                                <a href="{% url 'contact_us' %}" class="btn">Join Us</a>
+                                <a href="{% url 'whoweare' %}" class="btn primary">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
 								and network they need to shape the future of healthcare in Nigeria and beyond.</p>
 						</div>
 						<div class="btn-wrapper">
-							<a href=" " class="btn btn-primary" style="border-radius:5px;font-family: sans-serif;color:fff;">Learn More</a>
+							<a href="{% url 'whoweare' %}" class="btn btn-primary" style="border-radius:5px;font-family: sans-serif;color:fff;">Learn More</a>
 						</div>
 						<!-- End Choose Left -->
 					</div>
@@ -396,7 +396,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h3 style="color: #98681e;font-family: sans-serif;">Keep up with Our Most Recent Medical News.</h3>
+							<h3 style="color: #98681e;font-family: sans-serif;">What We’ve Been Up To Lately</h3>
 							<img src="{% static 'img/section-img.png'%}" alt="#">
 						</div>
 					</div>
@@ -508,7 +508,7 @@
 								<div class="col-lg-5 col-md-4 col-12">
 									<div class="form-group">
 										<div class="button">
-											<button type="submit" class="btn">Book An Appointment</button>
+											<button type="submit" class="btn">Contact PSN-YPG</button>
 										</div>
 									</div>
 								</div>
@@ -535,8 +535,8 @@
 					<div class="col-lg-6  col-12">
 						<!-- Start Newsletter Form -->
 						<div class="subscribe-text ">
-							<h6>Sign up for newsletter</h6>
-							<p class="">Stay updated with the latest news, special offers, and health tips<br> and never miss an update.</p>
+							<h6>Subscribe to Our Newsletter</h6>
+							<p class="">Stay updated with our monthly news, initiatives and opportunities for Young Pharmacists (YPs). Never miss a beat..</p>
 						</div>
 						<!-- End Newsletter Form -->
 					</div>
