@@ -50,6 +50,9 @@ def Nafdac_Yada (request):
 def Why_Nafdac (request):
     return render (request, 'psnypg/why_nafdac_yada.html')
 
+def News_Update (request):
+    return render (request, 'psnypg/news_update.html')
+
 def Contact_Us (request):
     return render (request, 'psnypg/contact.html')
 

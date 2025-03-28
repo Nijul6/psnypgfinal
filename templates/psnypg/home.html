@@ -10,12 +10,12 @@
         <div class="single-slider" style="background-image:url('{{ first_main_header_picture.main_header_img.url }}')">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-8">
                         <div class="text">
                             <h1 style="color: #005200;">{{ first_main_header_picture.main_header_title }}</h1><br>
                             <h5>{{ first_main_header_picture.main_header_description }} </h5>
                             <div class="button">
-                                <a href="{% url 'contact_us' %}" class="btn">Join Us</a>
+                                <a href="{% url 'dala_yps' %}" class="btn">Join Us</a>
                                 <a href="{% url 'contact_us' %}" class="btn primary">Learn More</a>
                             </div>
                         </div>
@@ -46,10 +46,12 @@
 									<div class="single-content">
 										<!--<span>Lorem Amet</span>-->
 										<h4>Our Mission</h4>
-										<p>To develop young pharmacists into agents of positive change at the 
-											local, national, and international levels by equipping them with 
-											the skills, knowledge, and network necessary to make meaningful 
-											contributions to healthcare and society.</p>
+										<p>At the Pharmaceutical Society of Nigeria - Young Pharmacists Group (PSN-YPG), 
+											we are committed to empowering young Pharmacists to become leaders and 
+											catalysts for positive change in the profession and society. Through collaboration, 
+											innovation, and professional excellence, we equip individuals to drive impact at local, 
+											national, and global levels, ensuring sustainable development and progress in healthcare.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -82,10 +84,8 @@
 									</div>
 									<div class="single-content">
 										<h4>Core Value</h4>
-										<p>To be the leading pharmacy in our community, recognized for our 
-											commitment to health, innovation, and customer care. We aspire to 
-											empower individuals to make informed healthcare choices, 
-											promoting wellness and ensuring better outcomes for all.</p>
+										<p>1. Innovation <br>2. Excellence <br>3. Leadership <br>4. Collaboration<br>5. Advocacy <br>6. Integrity <br>7. Community Impact
+										</p>
 									</div>
 								</div>
 							</div>
@@ -153,172 +153,8 @@
 		</section>
 		<!--/ End Why choose -->
 
-	
 
 
-		<!-- Start clients -->
-<div class="clients overlay">
-    <div class="container">
-        <div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h3 style="color: #98681e;font-family: sans-serif;">Our Strategic Partners</h3>
-				</div>
-			</div>
-            <div class="col-lg-12 col-md-12 col-12">
-                <div class="owl-carousel clients-slider">
-					{% for logo_sponsor in logo_sponsors%}
-                    <div class="single-clients">
-                        <img src="{{ logo_sponsor.logo_img.url }}" alt="#">
-                    </div>
-					{% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--/ End clients -->
-
-
-
-
-<!-- 
-
-<section class="Feautes section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h3 style="color: #98681e;font-family: sans-serif;">We Are Always Ready to Help You & Your Family</h3>
-                    <img src="{% static 'img/section-img.png'%}" alt="#">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-12">
-                <div class="single-features">
-                    <div class="signle-icon">
-                        <i class="icofont icofont-ambulance-cross"></i>
-                    </div>
-                    <h3>Emergency Help</h3>
-                    <p>At Psn-ypg, we are here to support you during medical emergencies. 
-                        While we are not an emergency medical facility, we can assist with</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-12">
-                <div class="single-features">
-                    <div class="signle-icon">
-                        <i class="icofont icofont-medical-sign-alt"></i>
-                    </div>
-                    <h3>Enriched Pharmacy</h3>
-                    <p>At Psn-ypg, we go beyond prescriptions—offering personalized care, 
-                        expert advice, and essential health services to enrich your well-being.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-12">
-                <div class="single-features last">
-                    <div class="signle-icon">
-                        <i class="icofont icofont-stethoscope"></i>
-                    </div>
-                    <h3>Medical Treatment</h3>
-                    <p>At Psn-ypg, we offer expert advice, personalized medication management, and 
-                        support to help you achieve better health.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
--->
-
-
-
-
-		
-		<!-- Start Fun-facts -->
-		<div id="fun-facts" class="fun-facts section overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6 col-12">
-						<!-- Start Single Fun -->
-						<div class="single-fun">
-							<i class="icofont icofont-home"></i>
-							<div class="content">
-								<span class="counter">368</span>
-								<p>Years Active</p>
-							</div>
-						</div>
-						<!-- End Single Fun -->
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<!-- Start Single Fun -->
-						<div class="single-fun">
-							<i class="icofont icofont-user-alt-3"></i>
-							<div class="content">
-								<span class="counter">557</span>
-								<p>Young Pharmacists</p>
-							</div>
-						</div>
-						<!-- End Single Fun -->
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<!-- Start Single Fun -->
-						<div class="single-fun">
-							<i class="icofont-simple-smile"></i>
-							<div class="content">
-								<span class="counter">4379</span>
-								<p>Outreach Programs</p>
-							</div>
-						</div>
-						<!-- End Single Fun -->
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<!-- Start Single Fun -->
-						<div class="single-fun">
-							<i class="icofont icofont-table"></i>
-							<div class="content">
-								<span class="counter">32</span>
-								<p>Key Partnerships</p>
-							</div>
-						</div>
-						<!-- End Single Fun -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Fun-facts -->
-		
-	
-		
-		<!-- Start portfolio -->
-		<section class="portfolio section" >
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h3 style="color: #98681e;font-family: sans-serif;">Meet the committee cordinators and excos</h3>
-							<img src="{% static 'img/section-img.png'%}" alt="#">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-12 col-12">
-						<div class="owl-carousel portfolio-slider">
-							{% for post in object_list %}
-							<div class="single-pf">
-								<img src="{{ post.excos_img.url }}" style="height: 300px;border-radius:10px;" alt="#">
-								<a href="{% url 'excos_user'%}" class="btn">View Details</a>
-							</div>
-							{% endfor %}
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--/ End portfolio -->
-				
 		
 		<!-- Start Blog Area -->
 		<section class="blog section" id="blog">
@@ -390,6 +226,123 @@
 
 
 
+		<!-- Start clients -->
+<div class="clients overlay">
+    <div class="container">
+        <div class="row">
+			<div class="col-lg-12">
+				<div class="section-title">
+					<h3 style="color: #98681e;font-family: sans-serif;">Our Strategic Partners</h3>
+				</div>
+			</div>
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="owl-carousel clients-slider">
+					{% for logo_sponsor in logo_sponsors%}
+                    <div class="single-clients">
+                        <img src="{{ logo_sponsor.logo_img.url }}" alt="#">
+                    </div>
+					{% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ End clients -->
+
+
+
+
+
+		
+		<!-- Start Fun-facts -->
+		<div id="fun-facts" class="fun-facts section overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont icofont-home"></i>
+							<div class="content">
+								<span class="counter">368</span>
+								<p>Years Active</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont icofont-user-alt-3"></i>
+							<div class="content">
+								<span class="counter">557</span>
+								<p>Young Pharmacists</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont-simple-smile"></i>
+							<div class="content">
+								<span class="counter">4379</span>
+								<p>Outreach Programs</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont icofont-table"></i>
+							<div class="content">
+								<span class="counter">32</span>
+								<p>Key Partnerships</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Fun-facts -->
+		
+	
+		
+		<!-- Start portfolio -->
+		<section class="portfolio section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h3 style="color: #98681e;font-family: sans-serif;">Meet the 2024/2025 National Central Executive Council
+							</h3>
+							<img src="{% static 'img/section-img.png'%}" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 col-12">
+						<div class="owl-carousel portfolio-slider">
+							{% for post in object_list %}
+							<div class="single-pf">
+								<img src="{{ post.excos_img.url }}" style="height: 300px;border-radius:10px;" alt="#">
+								<a href="{% url 'excos_user'%}" class="btn">View Details</a>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End portfolio -->
+				
+		
+
+
+
 
 
 		
@@ -441,9 +394,6 @@
 											<button type="submit" class="btn">Contact PSN-YPG</button>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-7 col-md-8 col-12">
-									<p>( We will be confirm by an Text Message )</p>
 								</div>
 							</div>
 						</form>
