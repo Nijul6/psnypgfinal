@@ -36,13 +36,15 @@
                 <!-- Single Blog -->
                 <div class="single-news">
                     <div class="news-head">
+                        <a href="{% url 'excos_users_article' post.pk %}">
                         <img src="{{ post.excos_user_img.url }}" style="height: 320px; border-radius: 10px;" alt="#">
+                        </a>
                     </div>
                     <div class="news-body">
                         <div class="news-content">
                             <div class="date">24 Mar, 2025</div>
                             <h4 style="color: #98681e; font-family: sans-serif;">
-                                <a href="blog-single.html">{{ post.excos_user_name }}</a>
+                                <a href="{% url 'excos_users_article' post.pk %}">{{ post.excos_user_name }}</a>
                             </h4>
                             <p class="text" style="color: #fff;">{{ post.excos_user_description }}</p>
                         </div>

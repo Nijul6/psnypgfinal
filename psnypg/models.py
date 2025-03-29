@@ -88,3 +88,22 @@ class WhyPSNYPG(models.Model):
 
     def get_absolute_url(self):
         return reverse('home',)
+    
+# PSN YPG News Update & Event
+class PsnypgNewsAndEvent(models.Model):
+    psnypg_news_and_event_title = models.CharField(max_length=255)
+    psnypg_news_and_event_description = models.TextField()
+    psnypg_news_and_event_date = models.CharField(max_length=255)
+    psnypg_news_and_event_slug = models.SlugField (max_length=255,blank=True, null=True)
+    psnypg_news_and_event_img = models.ImageField(upload_to=' psnypg_news_images/')
+    psnypg_news_and_event_publish_date = models.DateTimeField(auto_now_add=True)
+    psnypg_news_and_event_author = models.ForeignKey(User, on_delete=models.CASCADE)
+    
+    class Meta:
+        ordering = ['psnypg_news_and_event_publish_date']
+
+    def __str__(self):
+        return self.psnypg_news_and_event_title + ' | ' + str(self.psnypg_news_and_event_author)
+
+    def get_absolute_url(self):
+        return reverse('home',)

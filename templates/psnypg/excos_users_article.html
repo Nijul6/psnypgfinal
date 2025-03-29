@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{object.excos_user_name }}{% endblock %}
+{% block content%}
+
+
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>{{object.excos_user_name }}s</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
+	
+		<!-- Start Portfolio Details Area -->
+		<section class="pf-details section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner-content">
+							
+							<img src="{{object.excos_user_img.url }}"style="height: 600px;width:60%" alt="why images">
+							<div class="date">
+								<ul>
+									<li><span>Category :</span> ----</li>
+									<li><span>Date :</span> -----</li>
+									<li><span>Client :</span> ---</li>
+									<li><span>Ags :</span> ---</li>
+								</ul>
+							</div>
+							<div class="body-text">
+								<h3 style="color: #005200;" >{{ object.excos_user_name }}</h3>
+								<p>{{ object.excos_user_description }}</p>
+								
+								<div class="share">
+									<h4>Share Now -</h4>
+									<ul>
+										<li><a href="mailto:{{ post.excos_user_email }}" target="_blank" style="color: #005200;"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+										<li><a href="https://wa.me/{{ post.excos_user_whatsapp_number }}?text=Hi Psn-Ypg?" target="_blank" style="color: #005200;"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+										<li><a href="{{ post.excos_user_linkedIn_url }}" target="_blank" style="color: #005200;"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Portfolio Details Area -->
+		
+		{% endblock %}

@@ -31,53 +31,25 @@
 			</div>
 		</div>
 		<div class="row">
+			{% for post in object_list %}
 			<div class="col-lg-4 col-md-6 col-12">
 				<!-- Single Blog -->
 				<div class="single-news">
 					<div class="news-head"> 
-						<img src="{% static 'img/blog-sidebar1.jpg'%}"style="height: 250px;border-radius:10px;" alt="#">
+						<a href="{% url 'whypsn_article_detail' post.pk %}">
+						<img src="{{ post.why_psnypg_img.url }}"style="height: 250px;border-radius:10px;" alt="why images">
+						</a>
 					</div>
 					<div class="news-body">
 						<div class="news-content">
-							<h4 style="color: #98681e;font-family: sans-serif;"><a href="blog-single.html">Improved Delivery</a></h4>
-							<p class="text" style="color: #fff;"> Empowering pharmacists with the skills 
-								and confidence to implement impactful changes in their workplaces and communities.</p>
+							<h4 style="color: #98681e;font-family: sans-serif;"><a href="{% url 'whypsn_article_detail' post.pk %}">{{ post.why_psnypg_title }}</a></h4>
+							<p class="text" style="color: #fff;"> {{ post.why_psnypg_description|truncatechars:90 }}</p>
 						</div>
 					</div>
 				</div>
 				<!-- End Single Blog -->
 			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Blog -->
-				<div class="single-news">
-					<div class="news-head">
-						<img src="{% static 'img/blog-sidebar1.jpg'%}"style="height: 250px;border-radius:10px;" alt="#">
-					</div>
-					<div class="news-body">
-						<div class="news-content">
-							<h4 style="color: #98681e;font-family: sans-serif;"><a href="blog-single.html">Innovation and Research</a></h4>
-							<p class="text" style="color: #fff;">Encouraging young minds to explore cutting-edge solutions to Nigeria’s health challenges.</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Blog -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Blog -->
-				<div class="single-news">
-					<div class="news-head">
-						<img src="{% static 'img/blog-sidebar1.jpg'%}"style="height: 250px;border-radius:10px;" alt="#">
-					</div>
-					<div class="news-body">
-						<div class="news-content">
-							<h4 style="color: #98681e;font-family: sans-serif;"><a href="blog-single.html">Policy Influence</a></h4>
-							<p class="text" style="color: #fff;">Ensuring that young pharmacists’ perspectives are considered in shaping the
-								 policies that affect their profession and healthcare delivery at large..</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Blog -->
-			</div>
+			{% endfor %}
 		</div>
 	</div>
 </section>
