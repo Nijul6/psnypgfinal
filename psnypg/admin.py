@@ -1,6 +1,7 @@
 from django.contrib import admin
 # Register your models here.
 from . import models
+from .models import WhyPSNYPG
 from .models import ExcosPicturePost,MainHeaderPicturePost,LogoPicturePost,ExcosUser
 
 #The main header picture post model admin
@@ -25,3 +26,9 @@ class ExcosUserPostModelAdmin (admin.ModelAdmin):
     prepopulated_fields = {'excos_user_slug': ('excos_user_name',)}
     list_display = ['excos_user_name','excos_user_email','excos_user_whatsapp_number']
 admin.site.register(ExcosUser, ExcosUserPostModelAdmin)
+
+#WhyPSNYPG
+class WhyPSNYPGPostModelAdmin (admin.ModelAdmin):
+    prepopulated_fields = {'why_psnypg_slug': ('why_psnypg_title',)}
+    list_display = ['why_psnypg_title','why_psnypg_description','why_psnypg_publish_date']
+admin.site.register(WhyPSNYPG, WhyPSNYPGPostModelAdmin)

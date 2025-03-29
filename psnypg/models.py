@@ -69,3 +69,22 @@ class ExcosUser(models.Model):
 
     def __str__(self):
         return self.excos_user_name
+    
+    
+#WhyPSNYPG model
+class WhyPSNYPG(models.Model):
+    why_psnypg_title = models.CharField(max_length=255)
+    why_psnypg_description = models.TextField()
+    why_psnypg_slug = models.SlugField (max_length=255,blank=True, null=True)
+    why_psnypg_img = models.ImageField(upload_to=' why_psnypg_images/')
+    why_psnypg_publish_date = models.DateTimeField(auto_now_add=True)
+    why_psnypg_author = models.ForeignKey(User, on_delete=models.CASCADE)
+    
+    class Meta:
+        ordering = ['why_psnypg_publish_date']
+
+    def __str__(self):
+        return self.why_psnypg_title + ' | ' + str(self.why_psnypg_author)
+
+    def get_absolute_url(self):
+        return reverse('home',)
