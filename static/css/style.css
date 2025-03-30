@@ -342,6 +342,20 @@ body{
 	display: inline-block;
 	position:relative;
 }
+
+/* Default styling (for larger screens) */
+.what-weve-been-up-to {
+    margin-top: -130px; /* Adjust as necessary */
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+    .what-weve-been-up-to {
+        margin-top: 150px; /* This moves the heading down on mobile */
+    }
+}
+
+
 .header .nav li a::before {
 	position: absolute;
 	content: "";
