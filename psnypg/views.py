@@ -67,7 +67,22 @@ class WhyPsnypgArticleDetailView(DetailView):
     
 
 def Contact_Us (request):
-    return render (request, 'psnypg/contact.html')
+    if request.method == "POST":
+        message_name = request.POST['message-name']
+        message_email = request.POST['message-email']
+        message_phone = request.POST['message-phone']
+        message = request.POST['message']
+        messages.success(request, f'Your email was Successfully {message_name}..')
+        return render (request, 'psnypg/message.html', {'message_name':message_name})
+    
+    else:
+        return render (request, 'psnypg/contact.html', {})
+
+
+def message (request):
+    return render (request, 'deus_magnus/message.html', {})
+
+
 
 # Excos User of the PSNYPG
 class ExcosUserPage(ListView):

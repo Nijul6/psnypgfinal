@@ -19,6 +19,7 @@ urlpatterns = [
     #path('news_update/', views.News_Update, name='news_update'),
     path('why_nafdac_yada/', views.Why_Nafdac, name='why_nafdac_yada'),
     # Updated URL to accept email as parameter
+    path('message/', views.message, name='message'),
     path('excos_user/', ExcosUserPage.as_view(), name='excos_user'),  # List all users 
     path('excos_users_article/<int:pk>/', ExcosUserArticleDetailView.as_view(), name='excos_users_article'),
     path('excos_user/<str:email>/', ExcosUserPage.as_view(), name='excos_user'),
