@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}{{object.why_psnypg_title }}{% endblock %}
+{% block title %}{{object.psnypg_news_and_event_title }}{% endblock %}
 {% block content%}
 
 	
@@ -10,12 +10,7 @@
 				<div class="bread-inner">
 					<div class="row">
 						<div class="col-12">
-							<h2>Portfolio Details</h2>
-							<ul class="bread-list">
-								<li><a href="index.html">Home</a></li>
-								<li><i class="icofont-simple-right"></i></li>
-								<li class="active">Portfolio Details</li>
-							</ul>
+							<h2>{{object.psnypg_news_and_event_title }}</h2>
 						</div>
 					</div>
 				</div>
@@ -29,13 +24,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="inner-content">
-							<div class="image-slider">
-								<div class="pf-details-slider">
-									<img src="img/call-bg.jpg" alt="#">
-									<img src="img/call-bg.jpg" alt="#">
-									<img src="img/call-bg.jpg" alt="#">
-								</div>
-							</div>
+                            <img src="{{object.psnypg_news_and_event_img.url }}" alt="#">
 							<div class="date">
 								<ul>
 									<li><span>Category :</span> Heart Surgery</li>
@@ -45,18 +34,8 @@
 								</ul>
 							</div>
 							<div class="body-text">
-								<h3>Here is the name of this project here</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor a ti incididunt ut labore et dolore to in magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.Lorem ipsum dolor sit amet, in a in to in a consectetur.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna in a aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod</p>
-								<p>ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna to in aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. </p>
-								<p>ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna a aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod. dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.</p>
-								<div class="share">
-									<h4>Share Now -</h4>
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
+								<h3>{{object.psnypg_news_and_event_title }}</h3>
+								<p>{{object.psnypg_news_and_event_description }}</p>
 							</div>
 						</div>
 					</div>
