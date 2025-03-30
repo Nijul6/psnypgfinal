@@ -13,7 +13,7 @@ class MainHeaderPicturePost(models.Model):
     main_header_excos_author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
-        ordering = ['main_header_excos_publish_date']
+        ordering = ['-main_header_excos_publish_date']
         
     def __str__(self):
         return self.main_header_title + ' | ' + str(self.main_header_excos_author)
@@ -29,7 +29,7 @@ class LogoPicturePost(models.Model):
     logo_author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
-        ordering = ['logo_publish_date']
+        ordering = ['-logo_publish_date']
     
     def __str__(self):
         return f"Post by {self.logo_author.username}"
@@ -44,7 +44,7 @@ class ExcosPicturePost(models.Model):
     excos_author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
-        ordering = ['excos_publish_date']
+        ordering = ['-excos_publish_date']
     
     def __str__(self):
         return f"Post by {self.excos_author.username}"  # Return string-based representation
@@ -65,7 +65,7 @@ class ExcosUser(models.Model):
     excos_user_author = models.ForeignKey(User, on_delete=models.CASCADE)
     
     class Meta:
-        ordering = ['excos_user_publish_date']
+        ordering = ['-excos_user_publish_date']
 
     def __str__(self):
         return self.excos_user_name
@@ -81,7 +81,7 @@ class WhyPSNYPG(models.Model):
     why_psnypg_author = models.ForeignKey(User, on_delete=models.CASCADE)
     
     class Meta:
-        ordering = ['why_psnypg_publish_date']
+        ordering = ['-why_psnypg_publish_date']
 
     def __str__(self):
         return self.why_psnypg_title + ' | ' + str(self.why_psnypg_author)
@@ -100,7 +100,7 @@ class PsnypgNewsAndEvent(models.Model):
     psnypg_news_and_event_author = models.ForeignKey(User, on_delete=models.CASCADE)
     
     class Meta:
-        ordering = ['psnypg_news_and_event_publish_date']
+        ordering = ['-psnypg_news_and_event_publish_date']
 
     def __str__(self):
         return self.psnypg_news_and_event_title + ' | ' + str(self.psnypg_news_and_event_author)

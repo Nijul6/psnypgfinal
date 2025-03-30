@@ -141,7 +141,7 @@ body{
 	box-shadow: 0px 0px 10px #00000026;
 }
 #scrollUp:hover{
-	background:#98681e;
+	background:#D4AF4B;
 }
 /* Color Plate */
 .color-plate {
@@ -271,7 +271,7 @@ body{
 	margin-right:0px;
 }
 .header .top-link li a{
-	color:#98681e;
+	color:#D4AF4B;
 	font-size:14px;
 	font-weight:400;
 }
@@ -284,7 +284,7 @@ body{
 .header .top-contact li{
 	display:inline-block;
 	margin-right:25px;
-	color:#98681e;
+	color:#D4AF4B;
 }
 .header .top-contact li:last-child{
 	margin-right:0;
@@ -332,7 +332,7 @@ body{
 	margin:0;
 }
 .header .nav li a {
-	color: #98681e;
+	color: #D4AF4B;
 	font-size: 14px;
 	font-family: sans-serif;
 	font-weight: 500;
@@ -556,7 +556,7 @@ body{
 	border-radius: 3px;
 	border: none;
 	background: #fff;
-	color: #98681e;
+	color: #D4AF4B;
 }
 .header .search-form button {
 	position: absolute;
@@ -620,7 +620,7 @@ body{
 	color:#005200;
 }
 .slider .single-slider p {
-	color: #98681e;
+	color: #D4AF4B;
 	margin-top: 27px;
 	font-weight: 400;
 	font-family: sans-serif;
@@ -641,7 +641,7 @@ body{
 	margin:0;
 }
 .slider .single-slider .btn.primary{
-	background:#98681e;
+	background:#D4AF4B;
 	color:#fff;
 }
 .slider .single-slider .btn.primary:before{
@@ -671,7 +671,7 @@ body{
 	border-radius: 50%;
 }
 .slider .owl-carousel .owl-nav div:hover{
-	background:#98681e;
+	background:#D4AF4B;
 	color:#fff;
 }
 .slider .owl-carousel .owl-controls .owl-nav .owl-prev{
@@ -894,7 +894,7 @@ body{
 }
 .Feautes .single-features h3{
 	padding-top: 128px;
-	color:#98681e;
+	color:#D4AF4B;
 	font-weight:600;
 	font-size:21px;
 }
@@ -978,7 +978,7 @@ body{
 	font-size:24px;
 	font-weight:600;
 	font-family: sans-serif;
-	color:#98681e;
+	color:#D4AF4B;
 	position:relative;
 	padding-bottom:20px;
 	margin-bottom:24px;
@@ -1043,7 +1043,7 @@ body{
 	margin-top: -35px;
 	font-size: 21px;
 	background: #005200;
-	color: #98681e;
+	color: #D4AF4B;
 	padding-left: 4px;
 }
 .why-choose .choose-right .video:hover{
@@ -1345,10 +1345,10 @@ body{
 .services .single-service h4{
 	text-transform:capitalize;
 	margin-bottom:25px;
-	color:#98681e;
+	color:#D4AF4B;
 }
 .services .single-service h4 a{
-	color:#98681e;
+	color:#D4AF4B;
 	font-size:20px;
 	font-weight:600;
 }
@@ -1471,7 +1471,7 @@ body{
 }
 .testimonials .single-testimonial .name {
 	margin-top: 22px;
-	color: #98681e;
+	color: #D4AF4B;
 	font-weight: 500;
 	font-size: 15px;
 }
@@ -1560,7 +1560,7 @@ body{
 	color: #868686;
 }
 .departments .department-tab .nav li a.active .first{
-	color:#98681e;
+	color:#D4AF4B;
 }
 .departments .department-tab .nav li .second {
 	font-size: 14px;
@@ -1570,7 +1570,7 @@ body{
 }
 .departments .department-tab .tab-pane .department-left{}
 .departments .department-tab .tab-pane .department-left h3{
-	color:#98681e;
+	color:#D4AF4B;
 	font-weight:600;
 	font-size:26px;
 	position:relative;
@@ -1584,7 +1584,7 @@ body{
 	bottom:0;
 	height:3px;
 	width:50px;
-	background:#98681e;
+	background:#D4AF4B;
 }
 .departments .department-tab .tab-pane .department-left .p1 {
 	color: #005200;
@@ -1654,7 +1654,7 @@ body{
 }
 .pricing-table .single-table .title {
 	font-size: 21px;
-	color: #98681e;
+	color: #D4AF4B;
 	margin-top: 30px;
 	margin-bottom: 15px;
 }
@@ -1715,7 +1715,7 @@ body{
 	color:#fff;
 }
 .pricing-table .btn:before{
-	background:#98681e;
+	background:#D4AF4B;
 }
 .pricing-table .btn:hover{
 	color:#fff;
@@ -1893,7 +1893,7 @@ body{
 	font-size: 18px;
 	text-transform: capitalize;
 	font-weight: 500;
-	color: #98681e;
+	color: #D4AF4B;
 }
 .team .t-bottom h2 a:hover{
 	color:#005200;
@@ -1915,7 +1915,7 @@ body{
 .doctor-details-item .doctor-details-contact h3 {
 	font-weight: 600;
 	font-size: 20px;
-	color: #98681e;
+	color: #D4AF4B;
 	margin-bottom: 30px;
 }
 .doctor-details-item .doctor-details-contact .basic-info {
@@ -1927,7 +1927,7 @@ body{
 	display: block;
 	font-weight: 400;
 	font-size: 15px;
-	color: #98681e;
+	color: #D4AF4B;
 	margin-bottom: 10px;
 }
 .doctor-details-item .doctor-details-contact .basic-info li:last-child {
@@ -1972,7 +1972,7 @@ body{
 .doctor-details-item .doctor-details-work h3 {
 	font-weight: 600;
 	font-size: 20px;
-	color: #98681e;
+	color: #D4AF4B;
 	margin-top: 30px;
 }
 .doctor-details-item .doctor-details-work .time-sidual{
@@ -1983,7 +1983,7 @@ body{
 }
 .doctor-details-item .doctor-details-work .time-sidual li {
 	display: block;
-	color: #98681e;
+	color: #D4AF4B;
 	width: 100%;
 	margin-bottom: 10px;
 }
@@ -2106,7 +2106,7 @@ body{
 	line-height: 24px;
 }
 .blog .single-news .news-body h2 a{
-	color:#98681e;
+	color:#D4AF4B;
 	font-weight: 500;
 }
 .blog .single-news .news-body h2 a:hover{
@@ -2271,7 +2271,7 @@ body{
 	line-height: 18px;
 }
 .main-sidebar .single-post .content h5 a {
-	color: #98681e;
+	color: #D4AF4B;
 	font-weight: 500;
 	font-size: 14px;
 	font-weight: 500;
@@ -2371,7 +2371,7 @@ body{
 	margin:0;
 }
 .news-single .meta span, .news-single .meta span a {
-	color: #98681e;
+	color: #D4AF4B;
 	font-weight: 400;
 }
 .news-single .meta span i {
@@ -2625,7 +2625,7 @@ body{
 	color:#fff;
 }
 .news-single .single-comments a:hover{
-	background:#98681e;
+	background:#D4AF4B;
 	color:#fff;
 }
 .news-single .single-comments a i{
@@ -2689,7 +2689,7 @@ body{
 	line-height:50px;
 	font-weight: 400;
 	font-size:14px;
-	color:#98681e;
+	color:#D4AF4B;
 }
 .news-single .form-group textarea {
 	border: 1px solid #ddd;
@@ -2705,7 +2705,7 @@ body{
 	resize: none;
 	font-weight: 400;
 	font-size:14px;
-	color:#98681e;
+	color:#D4AF4B;
 }
 .news-single .form-group input, .news-single .form-group textarea {
 	border: 1px solid transparent;
@@ -2952,7 +2952,7 @@ body{
 	color:#005200;
 }
 .login .login-form p a:hover{
-	color:#98681e;
+	color:#D4AF4B;
 }
 .login .form {
 	margin-top: 30px;
@@ -3107,7 +3107,7 @@ body{
 	color:#005200;
 }
 .register .register-form p a:hover{
-	color:#98681e;
+	color:#D4AF4B;
 }
 .register .form {
 	margin-top: 30px;
@@ -3202,7 +3202,7 @@ body{
 	color:#005200;
 }
 .register .register-form .terms:hover{
-	color:#98681e;
+	color:#D4AF4B;
 }
 /*=========================
    End Register CSS
@@ -3602,7 +3602,7 @@ body{
 .newsletter .subscribe-text h6{
 	font-size:22px;
 	margin-bottom:10px;
-	color:#98681e;
+	color:#D4AF4B;
 }
 .newsletter .subscribe-text p{}
 .newsletter .subscribe-form{
@@ -4209,7 +4209,7 @@ body{
 	transition:all 0.4s ease;
 }
 .footer .single-footer .newsletter-inner .button:hover i{
-	color:#98681e;
+	color:#D4AF4B;
 }
 .footer .copyright{
 	background:#005200;
