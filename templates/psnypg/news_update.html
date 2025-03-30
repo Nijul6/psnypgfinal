@@ -35,16 +35,16 @@
 						<!-- Single Blog -->
 						<div class="single-news">
 							<div class="news-head">
-								<img src="{{ post.psnypg_news_and_event_img.url }}"style="height: 300px;border-radius:10px;" alt="#">
+								<img src="{{ post.psnypg_news_and_event_img.url }}"style="height: 270px;border-radius:10px;" alt="#">
 							</div>
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">{{ post.psnypg_news_and_event_date }}</div>
-									<h4 style="color: #98681e;font-family: sans-serif;"><a href="blog-single.html">{{ post.psnypg_news_and_event_title| truncatechars:28}}</a></h4>
+									<h4 style="color: #D4AF4B;font-family: sans-serif;"><a href="blog-single.html">{{ post.psnypg_news_and_event_title| truncatechars:28}}</a></h4>
 									<p class="text" style="color: #fff;">{{ post.psnypg_news_and_event_description | truncatechars:77 }}</p>
 								</div>
 							</div>
-						</div>
+						</div><br>
 						<!-- End Single Blog -->
 					</div>
 					{% endfor%}
