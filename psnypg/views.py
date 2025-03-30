@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.urls import reverse
 from django.urls import reverse_lazy
-from .models import ExcosPicturePost,MainHeaderPicturePost,LogoPicturePost,ExcosUser,WhyPSNYPG
+from .models import ExcosPicturePost,MainHeaderPicturePost,LogoPicturePost,ExcosUser,WhyPSNYPG,PsnypgNewsAndEvent
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin  
@@ -64,10 +64,6 @@ class WhyPsnypgArticleDetailView(DetailView):
         object = get_object_or_404(WhyPSNYPG, pk=pk)
         return render(request, 'psnypg/why_psn_article.html',{'whypsn_article_detail': object})
     
-    
-
-def News_Update (request):
-    return render (request, 'psnypg/news_update.html')
 
 def Contact_Us (request):
     return render (request, 'psnypg/contact.html')
@@ -91,3 +87,11 @@ class ExcosUserArticleDetailView(DetailView):
     def ExcosUserArticleDetailView(request, pk): 
         object = get_object_or_404(ExcosUser, pk=pk)
         return render(request, 'psnypg/excos_users_article.html',{'excos_users_article': object})
+    
+    
+def News_Update (request):
+    return render (request, 'psnypg/news_update.html')
+
+class Psnypg_News_And_Event(ListView):
+    model = PsnypgNewsAndEvent
+    template_name = 'psnypg/news_update.html'
