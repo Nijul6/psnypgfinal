@@ -22,6 +22,7 @@ class HomeView(ListView):
         context = super().get_context_data(**kwargs)
         context['first_main_header_pictures'] = MainHeaderPicturePost.objects.all()  
         context['logo_sponsors'] = LogoPicturePost.objects.all()
+        context['news_event_updates'] = PsnypgNewsAndEvent.objects.all()
  
         return context
 
