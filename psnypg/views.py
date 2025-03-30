@@ -92,3 +92,11 @@ class ExcosUserArticleDetailView(DetailView):
 class Psnypg_News_And_Event(ListView):
     model = PsnypgNewsAndEvent
     template_name = 'psnypg/news_update.html'
+    
+#Psnypg News & Events article details class base view
+class PsnypgNewsAndEventArticleDetailView(DetailView):
+    model = PsnypgNewsAndEvent
+    template_name = 'psnypg/news_update_article.html'
+    def PsnypgNewsAndEventArticleDetailView(request, pk): 
+        object = get_object_or_404(PsnypgNewsAndEvent, pk=pk)
+        return render(request, 'psnypg/news_update_article.html',{'news_update_article': object})
