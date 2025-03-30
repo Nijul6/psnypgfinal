@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 from .views import HomeView, ExcosUserPage,Why_Psnypg,WhyPsnypgArticleDetailView
-from .views import ExcosUserArticleDetailView,Psnypg_News_And_Event
+from .views import ExcosUserArticleDetailView,Psnypg_News_And_Event,PsnypgNewsAndEventArticleDetailView
 
 urlpatterns = [
     path('', HomeView.as_view(), name="home"),
@@ -23,5 +23,6 @@ urlpatterns = [
     path('excos_users_article/<int:pk>/', ExcosUserArticleDetailView.as_view(), name='excos_users_article'),
     path('excos_user/<str:email>/', ExcosUserPage.as_view(), name='excos_user'),
     path('news_update/', Psnypg_News_And_Event.as_view(), name='news_update'),
+    path('news_update_article/<int:pk>/', PsnypgNewsAndEventArticleDetailView.as_view(), name='news_update_article'),
     
 ]

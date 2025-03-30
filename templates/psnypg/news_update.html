@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block title %}News Update & Events {% endblock %}
 {% block content%}
+
 
 
 		<!-- Breadcrumbs -->
@@ -40,7 +42,7 @@
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">{{ post.psnypg_news_and_event_date }}</div>
-									<h4 style="color: #D4AF4B;font-family: sans-serif;"><a href="blog-single.html">{{ post.psnypg_news_and_event_title| truncatechars:28}}</a></h4>
+									<h4 style="color: #D4AF4B;font-family: sans-serif;"><a href="{% url 'news_update_article' post.pk %}">{{ post.psnypg_news_and_event_title| truncatechars:28}}</a></h4>
 									<p class="text" style="color: #fff;">{{ post.psnypg_news_and_event_description | truncatechars:77 }}</p>
 								</div>
 							</div>
