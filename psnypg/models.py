@@ -44,7 +44,7 @@ class ExcosPicturePost(models.Model):
     excos_author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
-        ordering = ['-excos_publish_date']
+        ordering = ['excos_publish_date']
     
     def __str__(self):
         return f"Post by {self.excos_author.username}"  # Return string-based representation
