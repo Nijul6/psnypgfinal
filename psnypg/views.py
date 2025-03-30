@@ -88,9 +88,6 @@ class ExcosUserArticleDetailView(DetailView):
         object = get_object_or_404(ExcosUser, pk=pk)
         return render(request, 'psnypg/excos_users_article.html',{'excos_users_article': object})
     
-    
-def News_Update (request):
-    return render (request, 'psnypg/news_update.html')
 
 class Psnypg_News_And_Event(ListView):
     model = PsnypgNewsAndEvent

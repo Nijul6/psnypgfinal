@@ -65,7 +65,7 @@ class ExcosUser(models.Model):
     excos_user_author = models.ForeignKey(User, on_delete=models.CASCADE)
     
     class Meta:
-        ordering = ['-excos_user_publish_date']
+        ordering = ['excos_user_publish_date']
 
     def __str__(self):
         return self.excos_user_name
