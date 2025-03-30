@@ -117,7 +117,7 @@
 											<li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
 													<li><a href="{% url 'news_update'%}">News Update</a></li>
-													<li><a href="blog-single.html">Advertising</a></li>
+													<!--<li><a href="blog-single.html">Advertising</a></li>-->
 												</ul>
 											</li>
 											<li><a href="{% url 'contact_us'%}">Contact Us</a></li>
@@ -175,17 +175,18 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-12">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Projects</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>PSN-YPG</a></li>
+                                    <li><a href="{% url 'home' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+                                    <li><a href="{% url 'whoweare' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+                                    <li><a href="{% url 'dala_yps'%}"><i class="fa fa-caret-right" aria-hidden="true"></i>Dala ‘25 (YPs)</a></li>
+                                    <li><a href="{% url 'dala2025'%}"><i class="fa fa-caret-right" aria-hidden="true"></i>Dala ‘25 (Sponsors)</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-6 col-md-6 col-12">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>YPG Team</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Reg Dala 25</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	
+                                    <li><a href="{% url 'excos_user' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>YPG Team</a></li>
+                                    <li><a href="https://forms.gle/j9bAUTy83A9NNGpz7"><i class="fa fa-caret-right" aria-hidden="true"></i>Reg Dala 25</a></li>
+                                    <li><a href="{% url 'contact_us'%}"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	
+                                    <li><a href="{% url 'news_update'%}"><i class="fa fa-caret-right" aria-hidden="true"></i>News & Events</a></li>	
                                 </ul>
                             </div>
                         </div>
