@@ -80,7 +80,7 @@ def Contact_Us (request):
 
 
 def message (request):
-    return render (request, 'deus_magnus/message.html', {})
+    return render (request, 'psnypg/message.html', {})
 
 
 

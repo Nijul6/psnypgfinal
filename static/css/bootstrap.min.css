@@ -2439,8 +2439,13 @@ fieldset[disabled] a.btn {
 
 .btn-primary:hover {
     color: #fff;
-    background-color:#98681e;
-    border-color:#98681e
+    background-color:#D4AF4B;
+    border-color:#D4AF4B
+}
+
+.btn-primary {
+    color: #fff;
+    border-color: #D4AF4B;
 }
 
 .btn-primary.focus,
@@ -2458,8 +2463,8 @@ fieldset[disabled] a.btn {
 .btn-primary:not([disabled]):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color:#98681e;
-    border-color:#98681e;
+    background-color:#D4AF4B;
+    border-color:#D4AF4B;
     box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
 }
 
@@ -2529,14 +2534,14 @@ fieldset[disabled] a.btn {
 
 .btn-info {
     color: #fff;
-    background-color:#98681e;
-    border-color:#98681e
+    background-color:#D4AF4B;
+    border-color:#D4AF4B
 }
 
 .btn-info:hover {
     color: #fff;
-    background-color:#98681e;
-    border-color: #98681e
+    background-color:#D4AF4B;
+    border-color: #D4AF4B
 }
 
 .btn-info.focus,
@@ -2554,7 +2559,7 @@ fieldset[disabled] a.btn {
 .btn-info:not([disabled]):not(.disabled):active,
 .show>.btn-info.dropdown-toggle {
     color: #fff;
-    background-color: #98681e;
+    background-color: #D4AF4B;
     border-color: #10707f;
     box-shadow: 0 0 0 .2rem rgba(23, 162, 184, .5)
 }
@@ -4658,7 +4663,7 @@ tbody.collapse.show {
 .badge-info[href]:hover {
     color: #fff;
     text-decoration: none;
-    background-color: #98681e
+    background-color: #D4AF4B
 }
 
 .badge-warning {
@@ -5956,7 +5961,7 @@ a.bg-success:hover {
 
 a.bg-info:focus,
 a.bg-info:hover {
-    background-color: #98681e!important
+    background-color: #D4AF4B!important
 }
 
 .bg-warning {
@@ -8589,7 +8594,7 @@ a.text-success:hover {
 
 a.text-info:focus,
 a.text-info:hover {
-    color: #98681e!important
+    color: #D4AF4B!important
 }
 
 .text-warning {
