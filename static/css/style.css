@@ -633,6 +633,31 @@ body{
 .slider .single-slider h1 span{
 	color:#005200;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .btn-wrapper {
+       
+        text-align: center; /* Center the button */
+        margin-top: 150px; /* Optional: Add some space above the button */
+
+    }
+}
+
+
+/* Default desktop and tablet styles */
+.blog.section {
+    margin-top: 50px;  /* Adjust the top margin on larger screens */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .blog.section {
+        margin-top: -150px;  /* This will move the section up on mobile */
+    }
+}
+
+
 .slider .single-slider p {
 	color: #D4AF4B;
 	margin-top: 27px;

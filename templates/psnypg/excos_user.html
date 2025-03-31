@@ -40,28 +40,30 @@
                     </div>
                     <div class="news-body">
                         <div class="news-content"> 
+                            <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; margin-left: 0;">
+                                <li style="margin-right: 10px;">
+                                    <a href="{{ post.excos_user_linkedIn_url }}" target="_blank" style="color: #D4AF4B; font-size: 20px; text-decoration: none;">
+                                        <i class="icofont-linkedIn"></i>
+                                    </a>
+                                </li>
+                                <li style="margin-right: 10px;">
+                                    <a href="mailto:{{ post.excos_user_email }}" target="_blank" style="color: #D4AF4B; font-size: 20px; text-decoration: none;">
+                                        <i class="icofont-envelope"></i>
+                                    </a>
+                                </li>
+                                <li style="margin-right: 10px;">
+                                    <a href="https://wa.me/{{ post.excos_user_whatsapp_number }}?text=Hi Psn-Ypg?" target="_blank" style="color: #D4AF4B; font-size: 20px; text-decoration: none;">
+                                        <i class="icofont-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul><br>
+                            <center>
                             <h4 style="color: #D4AF4B; font-family: sans-serif;">
                                 <a href="{% url 'excos_users_article' post.pk %}">{{ post.excos_user_name }}</a>
                             </h4>
                             <p class="text" style="color: #fff;">{{ post.excos_user_description }}</p>
+                        </center>
                         </div>
-                        <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; margin-left: 0;">
-                            <li style="margin-right: 10px;">
-                                <a href="{{ post.excos_user_linkedIn_url }}" target="_blank" style="color: #005200; font-size: 20px; text-decoration: none;">
-                                    <i class="icofont-linkedIn"></i>
-                                </a>
-                            </li>
-                            <li style="margin-right: 10px;">
-                                <a href="mailto:{{ post.excos_user_email }}" target="_blank" style="color: #005200; font-size: 20px; text-decoration: none;">
-                                    <i class="icofont-envelope"></i>
-                                </a>
-                            </li>
-                            <li style="margin-right: 10px;">
-                                <a href="https://wa.me/{{ post.excos_user_whatsapp_number }}?text=Hi Psn-Ypg?" target="_blank" style="color: #005200; font-size: 20px; text-decoration: none;">
-                                    <i class="icofont-whatsapp"></i>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div><br>
                 <!-- End Single Blog -->

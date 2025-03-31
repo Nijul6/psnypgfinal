@@ -115,27 +115,39 @@
 					<div class="col-lg-6 col-12">
 						<!-- Start Choose Left -->
 						<div class="choose-left">
-							<h3>Brief History</h3>
-							<p>The Pharmaceutical Society of Nigeria - Young Pharmacists Group (PSN-YPG) is an 
-								interest group within the Pharmaceutical Society of Nigeria (PSN), dedicated to 
-								fostering the growth and development of Young Pharmacists.<br>
-								Membership is open to all Pharmacists licensed by the Pharmacists Council of 
-								Nigeria (PCN) who are 35 years old or younger and/or within five years 
-								post-graduation from an accredited Pharmacy school.<br><br>
-								PSN-YPG was founded in 2012 as an evolution of the Young Pharmacists' 
-								Forum (YPF), aligning with the global model of the Early Career Pharmacists’ 
-								Group (ECPG) of the International Pharmaceutical Federation (FIP). It was 
-								created to empower early-career Pharmacists, bridge generational gaps in 
-								leadership, and amplify the collective voice of young professionals in shaping the future of Pharmacy in Nigeria.<br><br>
-								At its core, PSN-YPG thrives on the synergy of innovation, intellectual capacity, 
-								and youthful energy. Beyond professional development, the Group is committed to 
-								driving positive change within the Pharmacy profession and society at large. 
-								Through continuous learning, leadership grooming, and strategic collaborations, 
-								PSN-YPG continues to redefine the role of Young Pharmacists—transforming them into 
-								change makers, thought leaders, and key contributors to national and global healthcare systems.</p>
-						</div>
-						<div class="btn-wrapper">
-							<a href="{% url 'whoweare' %}" class="btn btn-primary" style="border-radius:5px;font-family: sans-serif;color:fff;">Learn More</a>
+							<h3>Who We Are</h3>
+							<p>At PSN-YPG, we are the heart beat of the next generation of pharmacists in Nigeria. 
+								Our network is made up of young, dynamic professionals—pharmacists who are either 
+								35 years or younger or have graduated from an accredited pharmacy school within 
+								the last five years. As the youth arm of the Pharmaceutical Society of Nigeria 
+								(PSN), we are committed to innovation, advocacy, and leadership in shaping the 
+								future of healthcare.<br><br>
+
+								Our mission? To empower Young Pharmacists by equipping them with the knowledge, 
+								skills, and opportunities to lead, innovate, and transform pharmacy 
+								practice. Through policy advocacy, professional development programs, 
+								mentorship, and strategic partnerships, we ensure that Young Pharmacists 
+								have a voice in the evolving healthcare landscape.
+								Whether you’re looking to connect, grow, or make an impact, PSN-YPG is 
+								your platform to engage, collaborate, and drive meaningful change in public health.
+							</p>
+							<div class="row">
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i>Innovation. </li>
+										<li><i class="fa fa-caret-right"></i>Excellence.</li>
+										<li><i class="fa fa-caret-right"></i>Leadership.</li>
+										<li><i class="fa fa-caret-right"></i>Collaboration. </li>
+									</ul>
+								</div>
+								<div class="col-lg-5">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i> Advocacy </li>
+										<li><i class="fa fa-caret-right"></i> Integrity</li>
+										<li><i class="fa fa-caret-right"></i> Community Impact</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 						<!-- End Choose Left -->
 					</div>
@@ -143,11 +155,14 @@
 						<!-- Start Choose Rights -->
 						<div class="choose-right">
 							<div class="video-image">
-								<img src="{% static 'img/brief.jpg'%}" style=" border-radius: 10px;" alt="#">
+								<img src="{% static 'img/Tekena.jpg'%}"style="height: 450px; width: 350px;border-radius: 5px;" alt="#">
 							</div>
 						</div>
 						<!-- End Choose Rights -->
 					</div>
+					<div class="btn-wrapper">
+						<a href="{% url 'whoweare' %}" class="btn btn-primary" style="border-radius:5px;font-family: sans-serif;color:fff;">Learn More</a>
+					</div>					
 				</div>
 			</div>
 		</section>
@@ -155,44 +170,39 @@
 
 
 				<!-- Start Blog Area -->
-				<section class="blog section" id="blog">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="section-title">
-									<h3 class="what-weve-been-up-to" style="color: #D4AF4B;">What We’ve Been Up To Lately</h3>
-									<img src="{% static 'img/section-img.png'%}" alt="#">
-								</div>
-								
-							</div>
-						</div>
-						<div class="row">
-							{% for news_event_update in news_event_updates%}
-							<div class="col-lg-4 col-md-6 col-12">
-								<!-- Single Blog -->
-								<div class="single-news">
-									<div class="news-head">
-										<img src="{{news_event_update.psnypg_news_and_event_img.url}}"style="height: 210px;border-radius:10px;" alt="#">
-									</div>
-									<div class="news-body">
-										<div class="news-content">
-											<div class="date">{{news_event_update.psnypg_news_and_event_date}}</div>
-											<h4 style="color: #D4AF4B;font-family: sans-serif;"><a href="{% url 'news_update_article' news_event_update.pk %}">{{news_event_update.psnypg_news_and_event_title | truncatechars:30}}</a></h4>
-											<p class="text" style="color: #fff;">{{news_event_update.psnypg_news_and_event_description | truncatechars:70}}</p>
-										</div>
-									</div>
-								</div><br>
-								<!-- End Single Blog -->
-							</div>
-							{% endfor %}
-						</div>
-					</div>
-				</section>
-				<!-- End Blog Area -->
-
-
-
-
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h3 class="what-weve-been-up-to" style="color: #D4AF4B;">What We’ve Been Up To Lately</h3>
+                    <img src="{% static 'img/section-img.png'%}" alt="#">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for news_event_update in news_event_updates %}
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Single Blog -->
+                <div class="single-news">
+                    <div class="news-head">
+                        <img src="{{news_event_update.psnypg_news_and_event_img.url}}" style="height: 210px;border-radius:10px;" alt="#">
+                    </div>
+                    <div class="news-body">
+                        <div class="news-content">
+                            <div class="date">{{news_event_update.psnypg_news_and_event_date}}</div>
+                            <h4 style="color: #D4AF4B;font-family: sans-serif;"><a href="{% url 'news_update_article' news_event_update.pk %}">{{news_event_update.psnypg_news_and_event_title | truncatechars:30}}</a></h4>
+                            <p class="text" style="color: #fff;">{{news_event_update.psnypg_news_and_event_description | truncatechars:70}}</p>
+                        </div>
+                    </div>
+                </div><br>
+                <!-- End Single Blog -->
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End Blog Area -->
 
 
 		<!--
@@ -303,7 +313,7 @@
 						<div class="single-fun">
 							<i class="icofont icofont-home"></i>
 							<div class="content">
-								<span class="counter">368</span>
+								<span class="counter">10</span>
 								<p>Years Active</p>
 							</div>
 						</div>
@@ -314,7 +324,7 @@
 						<div class="single-fun">
 							<i class="icofont icofont-user-alt-3"></i>
 							<div class="content">
-								<span class="counter">557</span>
+								<span class="counter">30,000</span>
 								<p>Young Pharmacists</p>
 							</div>
 						</div>
@@ -325,8 +335,8 @@
 						<div class="single-fun">
 							<i class="icofont-simple-smile"></i>
 							<div class="content">
-								<span class="counter">4379</span>
-								<p>Outreach Programs</p>
+								<span class="counter">4000</span>
+								<p>Community Outreach Programs</p>
 							</div>
 						</div>
 						<!-- End Single Fun -->
