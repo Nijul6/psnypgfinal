@@ -25,7 +25,7 @@
 			<div class="col-lg-12">
 				<div class="section-title">
 					<h3 style="color: #D4AF4B;font-family: sans-serif;">Young pharmacists represent the future of Nigeria’s healthcare system. By providing a 
-						platform that nurtures their potential, <br>PSN-YPG contributes to:</h3>
+						platform that nurtures their potential, <br><br>PSN-YPG contributes to:</h3>
 					<img src="{% static 'img/section-img.png'%}" alt="#">
 				</div>
 			</div>
@@ -37,13 +37,13 @@
 				<div class="single-news">
 					<div class="news-head"> 
 						<a href="{% url 'whypsn_article_detail' post.pk %}">
-						<img src="{{ post.why_psnypg_img.url }}"style="height: 250px;border-radius:10px;" alt="why images">
+						<img src="{{ post.why_psnypg_img.url }}"style=";border-radius:10px;" alt="why images">
 						</a>
 					</div>
 					<div class="news-body">
 						<div class="news-content">
 							<h4 style="color: #D4AF4B;font-family: sans-serif;"><a href="{% url 'whypsn_article_detail' post.pk %}">{{ post.why_psnypg_title }}</a></h4>
-							<p class="text" style="color: #fff;"> {{ post.why_psnypg_description|truncatechars:90 }}</p>
+							<p class="text" style="color: #fff;"> {{ post.why_psnypg_description }}</p>
 						</div>
 					</div>
 				</div>
