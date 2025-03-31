@@ -1355,6 +1355,24 @@ body{
 	display:block;
 	border-radius:50%;
 }
+
+
+
+/* Set a fixed size for the logos */
+.single-clients img {
+    width: 100%; /* Ensures the logos stretch to fill their container */
+    height: 180px; /* Adjust the height to your preferred value */
+    object-fit: contain; /* Maintains aspect ratio while filling the container */
+}
+
+/* You can also control the height for different screen sizes */
+@media (max-width: 768px) {
+    .single-clients img {
+        height: 180px; /* Smaller logos on mobile devices */
+    }
+}
+
+
 .pf-details .body-text .share ul li a:hover{
 	color:#fff;
 	border-color:transparent;
