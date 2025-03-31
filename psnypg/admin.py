@@ -13,7 +13,7 @@ admin.site.register(MainHeaderPicturePost, MainHeaderPicturePostModelAdmin)
 
 # the excos caroseul picture
 class ExcosPicturePostModelAdmin (admin.ModelAdmin):
-    list_display = ['excos_img','excos_author',]
+    list_display = ['excos_title','excos_img','excos_author',]
 admin.site.register(ExcosPicturePost, ExcosPicturePostModelAdmin)
 
 # the Logo caroseul picture

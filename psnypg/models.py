@@ -39,7 +39,8 @@ class LogoPicturePost(models.Model):
     
     
 class ExcosPicturePost(models.Model):
-    excos_img = models.ImageField(upload_to='images/')
+    excos_title = models.CharField(max_length=255, blank=True, null=True)
+    excos_img = models.ImageField(upload_to='home_excos_img')
     excos_publish_date = models.DateTimeField(auto_now_add=True)
     excos_author = models.ForeignKey(User, on_delete=models.CASCADE)
 
