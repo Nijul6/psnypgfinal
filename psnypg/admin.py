@@ -21,7 +21,6 @@ class LogoPicturePostModelAdmin (admin.ModelAdmin):
     list_display = ['logo_img','logo_author']
 admin.site.register(LogoPicturePost, LogoPicturePostModelAdmin)
 
-
 #The main excos post model admin
 class ExcosUserPostModelAdmin (admin.ModelAdmin):
     prepopulated_fields = {'excos_user_slug': ('excos_user_name',)}
