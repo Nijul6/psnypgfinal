@@ -658,7 +658,7 @@ body{
 /* Only apply these styles on mobile (when screen width is 768px or smaller) */
 @media (max-width: 768px) {
     .learn-more-btn {
-        display: block; /* Ensure the button is block-level */
+        display: block; 
         text-align: center; /* Center the button text */
         margin: 20px auto; /* Center the button and add space around it */
 		margin-left: 18;
