@@ -118,7 +118,7 @@ body{
 	background: #005200;
 	text-align: center;
 	color: #fff;
-	top: 0;
+	top: -320;
 	cursor: pointer;
 	box-shadow: -4px 0px 5px #00000036;
 }
