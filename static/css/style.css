@@ -1372,6 +1372,12 @@ body{
     }
 }
 
+@media (max-width: 768px) {
+    #blogg {
+        margin-top: 50px; /* You can adjust this value as needed */
+    }
+}
+
 
 .pf-details .body-text .share ul li a:hover{
 	color:#fff;
