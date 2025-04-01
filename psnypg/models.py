@@ -96,7 +96,9 @@ class PsnypgNewsAndEvent(models.Model):
     psnypg_news_and_event_description = models.TextField()
     psnypg_news_and_event_date = models.CharField(max_length=255)
     psnypg_news_and_event_slug = models.SlugField (max_length=255,blank=True, null=True)
-    psnypg_news_and_event_img = models.ImageField(upload_to=' psnypg_news_images/')
+    psnypg_news_and_event_img = models.ImageField(upload_to=' news_images/')
+    psnypg_news_and_event_img_2 = models.ImageField(upload_to=' news_images_2/')
+    psnypg_news_and_event_img_3 = models.ImageField(upload_to=' news_images_3/')
     psnypg_news_and_event_publish_date = models.DateTimeField(auto_now_add=True)
     psnypg_news_and_event_author = models.ForeignKey(User, on_delete=models.CASCADE)
     
