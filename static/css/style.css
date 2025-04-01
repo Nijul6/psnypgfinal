@@ -121,20 +121,20 @@ body{
     top: -3px; /* keep this as it is */
     cursor: pointer;
     box-shadow: -4px 0px 5px #00000036;
-    transform: translateY(-220px); /* Move up by 20px */
+    transform: translateY(220px); /* Move up by 20px */
 }
 
 /* Media query for mobile devices (max-width: 767px or adjust as needed) */
 @media screen and (max-width: 767px) {
     .get-pro {
-        transform: translateY(-300px); /* Move up more on smaller screens */
+        transform: translateY(122px); /* Move up more on smaller screens */
     }
 }
 
 
 
 .get-pro:hover{
-	
+	background-color: #D4AF4B;
 }
 #scrollUp {
 	bottom: 15px;
