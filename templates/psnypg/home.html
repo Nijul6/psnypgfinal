@@ -205,106 +205,7 @@
 <!-- End Blog Area -->
 
 
-		<!--
-		
-		<section class="blog section" id="blog">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h3 style="color: #D4AF4B;font-family: sans-serif;">What We’ve Been Up To Lately</h3>
-							<img src="{% static 'img/section-img.png'%}" alt="#">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-12">
-					>
-						<div class="single-news">
-							<div class="news-head">
-								<img src="{% static 'img/psn.jpg'%}"style="height: 320px;border-radius:10px;" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">24 Mar, 2025</div>
-									<h4 style="color: #D4AF4B;font-family: sans-serif;"><a href="blog-single.html">We have annnocuced our new product.</a></h4>
-									<p class="text" style="color: #fff;">We’re excited to announce the launch of our new product! Designed to enhance your experience. 
-										Visit us today to learn more and try it for yourself.</p>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						
-						<div class="single-news">
-							<div class="news-head">
-								<img src="{% static 'img/psn.jpg'%}"style="height: 300px;border-radius:10px;" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">24 Mar, 2025</div>
-									<h4 style="color: #D4AF4B;font-family: sans-serif;"><a href="blog-single.html">Top five way for solving teeth problems.</a></h4>
-									<p class="text"  style="color: #fff;">We’re excited to announce the launch of our new product! Designed to enhance your experience. 
-										Visit us today to learn more and try it for yourself.</p>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						
-						<div class="single-news">
-							<div class="news-head">
-								<img src="{% static 'img/psn.jpg'%}"style="height: 300px;border-radius:10px;" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">24 Mar, 2025</div>
-									<h4 style="color: #D4AF4B;font-family: sans-serif;"><a href="blog-single.html">We provide highly business soliutions.</a></h4>
-									<p class="text"  style="color: #fff;">We’re excited to announce the launch of our new product! Designed to enhance your experience. 
-										Visit us today to learn more and try it for yourself.</p>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		
-	-->
-
-
-		<!-- Start clients -->
-		<div class="clients overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h3 style="color: #D4AF4B;font-family: sans-serif;">Our Strategic Partners</h3>
-						</div>
-					</div>
-					<div class="col-lg-12 col-md-12 col-12">
-						<div class="owl-carousel clients-slider">
-							{% for logo_sponsor in logo_sponsors %}
-							<div class="single-clients">
-								<img src="{{ logo_sponsor.logo_img.url }}" alt="#">
-							</div>
-							{% endfor %}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End clients -->
-		
-
-
-
-
-		
-		<!-- Start Fun-facts -->
+				<!-- Start Fun-facts -->
 		<div id="fun-facts" class="fun-facts section overlay">
 			<div class="container">
 				<div class="row">
@@ -389,6 +290,33 @@
 		</section>
 		<!--/ End portfolio -->
 		
+
+
+
+			<!-- Start clients -->
+			<div class="clients overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="section-title">
+								<h3 style="color: #D4AF4B;font-family: sans-serif;">Our Strategic Partners</h3>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="owl-carousel clients-slider">
+								{% for logo_sponsor in logo_sponsors %}
+								<div class="single-clients">
+									<img src="{{ logo_sponsor.logo_img.url }}" alt="#">
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End clients -->
+
+
 		
 		<!-- Start Appointment -->
 		<section class="appointment">
