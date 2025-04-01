@@ -637,9 +637,9 @@ body{
 /* Mobile styles */
 @media (max-width: 768px) {
     .btn-wrapper {
-       
         text-align: center; /* Center the button */
         margin-top: 150px; /* Optional: Add some space above the button */
+		
 
     }
 }
@@ -1352,7 +1352,6 @@ body{
 	text-align:center;
 	border:1px solid #C8C8C8;
 	color:#757575;
-	display:block;
 	border-radius:50%;
 }
 
