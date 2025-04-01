@@ -655,6 +655,35 @@ body{
     }
 }
 
+/* Only apply these styles on mobile (when screen width is 768px or smaller) */
+@media (max-width: 768px) {
+    .learn-more-btn {
+        display: block; /* Ensure the button is block-level */
+        text-align: center; /* Center the button text */
+        margin: 20px auto; /* Center the button and add space around it */
+		margin-left: 18;
+        padding: 12px 24px; /* Make the button larger and easier to tap */
+        font-size: 16px; /* Ensure the text is readable */
+        background-color: #005200; /* Button color */
+        color: fff; /* White text color */
+        text-decoration: none; /* Remove any underline */
+        border-radius: 5px; /* Rounded corners */
+        z-index: 10; /* Ensure it’s above other elements */
+        position: relative; /* Required for z-index to work */
+    }
+
+    .btn-wrapper {
+        text-align: center; /* Center the button container */
+    }
+}
+
+
+.learn-more-btn {
+    position: relative;
+    z-index: 10; /* Ensures the button is on top of other elements */
+}
+
+
 
 /* Default desktop and tablet styles */
 .blog.section {
